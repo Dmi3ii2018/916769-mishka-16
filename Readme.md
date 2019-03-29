@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дмитрий Алексеев](https://up.htmlacademy.ru/adaptive/16/user/916769).
-* Наставник: `Мария Гришкевич`.
+* Наставник: `Мария Гришкевич`(https://up.htmlacademy.ru/adaptive/16/user/787471).
 
 ---
 
