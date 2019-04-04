@@ -8,12 +8,9 @@
 
 <body>
   <header class="page-header header-main">
-    <!--Where better to place h1-->
-    <h1 class="visually-hidden">Интернет магазин вязаных изделий Мишка</h1>
     <a class="logo page-header__logo" href="#">
       <img class="logo__image" src="http://placehold.it/" width="86" height="35" alt="Интернет-магазин Мишка">
     </a>
-    <!--Правильно ли распологать button именно так и здесь-->
     <button class="menu-button page-header__toggle" type="button">Открыть меню</button>
     <nav class="main-nav">
       <ul class="main-nav__list site-list">
@@ -31,32 +28,30 @@
         </li>
       </ul>
     </nav>
-    <div class="intro-block">
-      <!--Правильно ли помещать этот блок в header? Как лучше назвать этот блок?-->
-      <p class="intro-block__title "></p>
-    </div>
-    <ul class="goods-type">
-      <li class="goods-type__item">Предметы интерьера</li>
-      <li class="goods-type__item">Детские игрушки</li>
-    </ul>
   </header>
   <main class="page-main">
+    <div class="intro-block"><!--?-->
+      <h1 class="intro-block__title ">Милые штуки ручной работы для дома</h1>
+      <ul class="goods-type">
+        <li class="goods-type__item">Предметы интерьера</li>
+        <li class="goods-type__item">Детские игрушки</li>
+      </ul>
+    </div>
     <section class="week-offer">
       <h2 class="title week-offer__title">Товар недели</h2>
       <h3 class="week-offer__name">Вязаные корзинки</h3>
       <p class="week-offer__description">Экологически чистая пряжа, ручная работа.
         Доступны в шести расцветках, и трех размерах.</p>
       <table class="week-offer__table">
-        <!--Как лучше оформить таблицу: построчно как в демке или как у меня сейчас в две строки, эти строки потом переставлю с помощью флекса?-->
         <tr>
           <th class="week-offer__field">Цвет:</th>
           <th class="week-offer__field">Диаметр:</th>
           <th class="week-offer__field">Высота:</th>
         </tr>
         <tr>
-          <td class="weekf-offer__value">«Тиффани»/серый</td>
-          <td class="weekf-offer__value">25 см</td>
-          <td class="weekf-offer__value">15 см</td>
+          <td class="week-offer__value">«Тиффани»/серый</td>
+          <td class="week-offer__value">25 см</td>
+          <td class="week-offer__value">15 см</td>
         </tr>
       </table>
       <img class="offer-image" src="#" width="260" height="315" alt="Товар недели">
@@ -65,8 +60,7 @@
     </section>
     <section class="features">
       <h2 class="title features__title">Коротко о нас</h2>
-      <ul class="featuress__list">
-        <!--вопрос по этому списку на созвон-->
+      <ul class="features__list">
         <li class="features__item">Экологически чистые материалы</li>
         <li class="features__item">Скандинавский стиль по российской цене</li>
         <li class="features__item">Увеличивает лайки на фотографиях</li>
@@ -77,7 +71,7 @@
     </section>
     <section class="feedback">
       <h2 class="title feedback__title">Отзывы</h2>
-      <blockquote class="feddback__text">
+      <blockquote class="feedback__text">
         <p>
           Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
           как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
@@ -88,28 +82,21 @@
           @misssssskras
         </cite>
       </blockquote>
-      <!--стрелочки слайдера это ссылки или кнопки?-->
       <button class="slider-button arrow-left" type="button" name="button">Предыдущий отзыв</button>
       <button class="slider-button arrow-right" type="button" name="button">Следующий отзыв</button>
       <a class="button feedback-button" href="#">Написать</a>
-      <!--можно  ли дать ссылке класс button?-->
     </section>
     <section class="contacts">
-      <h2 class="title">Контакты</h2>
-      <table class="contacts__table">
-        <!--здесь таблицу сделал как в демке-->
-        <tr>
-          <td class="contacts__field">e-mail:</td>
-          <td class="contacts__value"><a class="contacts__email-adress" href="#">info@mimimishkashop.ru</a></td>
-        </tr>
-        <tr>
-          <td class="contacts__field">адрес:</td>
-          <td class="contacts__value">
-            info@mimimishkashop.ruг. Санкт-Петербург,
-            ул. Большая Конюшенная, д. 19/8, офис 101
-          </td>
-        </tr>
-      </table>
+      <h2 class="title contacts__title">Контакты</h2>
+        <!--убрал первоначальныю таблицу, сделал с учетом десктопа и планшета-->
+        <p class="contacts__field">
+          <span class="contacts__name">e-mail:</span>
+          <span class="contacts__value"><a class="contacts__email-adress" href="#">info@mimimishkashop.ru</a></span>
+        </p>
+        <p class="contacts__field">
+          <span class="contacts__name">адрес:</span>
+          <span class="contacts__value">Санкт-Петербург,  ул. Большая Конюшенная, д. 19/8, офис 101</span>
+        </p>
     </section>
     <section class="map">
       <h2 class="visually-hidden">Схема проезда</h2>
