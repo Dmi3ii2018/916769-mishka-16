@@ -4,14 +4,17 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header class="page-header header-main">
-    <a class="logo page-header__logo" href="#">
-      <img class="logo__image" src="http://placehold.it/" width="86" height="35" alt="Интернет-магазин Мишка">
-    </a>
-    <button class="menu-button page-header__toggle" type="button">Открыть меню</button>
+  <header class="page-header">
+    <div class="logo-wrapper">
+      <a class="logo page-header__logo" href="#">
+        <img class="logo__image" src="http://placehold.it/" width="86" height="35" alt="Интернет-магазин Мишка">
+      </a>
+      <button class="menu-button page-header__toggle" type="button">Открыть меню</button>
+    </div>
     <nav class="main-nav">
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
@@ -30,36 +33,42 @@
     </nav>
   </header>
   <main class="page-main">
-    <div class="intro-block">
-      <h1 class="intro-block__title ">Милые штуки ручной работы для дома</h1>
+    <div class="promo-block">
+      <div class="promo-block-image">
+        <!--Могу ли я сразу использовать блок с модификатором title--x без простого блока title&
+      Блок title будет применяться к заголовку-->
+        <h1 class="title promo-block__title">Милые штуки ручной работы&nbsp;для дома</h1>
+      </div>
       <ul class="goods-type">
         <li class="goods-type__item goods-type__item--interier"><a class="goods-type__link" href="#">Предметы интерьера</a></li>
         <li class="goods-type__item goods-type__item--toys"><a class="goods-type__link" href="#">Детские игрушки</a></li>
       </ul>
     </div>
     <section class="week-offer">
-      <h2 class="week-offer__name">Вязаные корзинки</h2>
-      <h3 class="title week-offer__title">Товар недели</h3>
-      <p class="week-offer__description">Экологически чистая пряжа, ручная работа.
-        Доступны в шести расцветках, и трех размерах.</p>
-      <table class="week-offer__table">
-        <tr>
-          <th class="week-offer__field">Цвет:</th>
-          <th class="week-offer__field">Диаметр:</th>
-          <th class="week-offer__field">Высота:</th>
-        </tr>
-        <tr>
-          <td class="week-offer__value">«Тиффани»/серый</td>
-          <td class="week-offer__value">25 см</td>
-          <td class="week-offer__value">15 см</td>
-        </tr>
-      </table>
-      <img class="week-offer__image" src="#" width="260" height="315" alt="Товар недели">
-      <p class="week-offer__price">Цена: 990 руб.</p>
-      <a class="week-offer__button button" href="#"></a>
+      <div class="center-wrapper">
+        <h2 class="title title--m week-offer__name">Вязаные корзинки</h2>
+        <h3 class="title title--s week-offer__title">Товар недели</h3>
+        <p class="week-offer__description">Экологически чистая пряжа, ручная работа.
+          Доступны в шести расцветках, и трех размерах.</p>
+        <table class="week-offer__table">
+          <tr>
+            <td class="week-offer__field">Цвет:</td>
+            <td class="week-offer__field">Высота:</td>
+            <td class="week-offer__field">Диаметр:</td>
+          </tr>
+          <tr>
+            <td class="week-offer__value">«Тиффани»/серый</td>
+            <td class="week-offer__value">25 см</td>
+            <td class="week-offer__value">15 см</td>
+          </tr>
+        </table>
+        <img class="week-offer__image" src="#" width="260" height="315" alt="Товар недели">
+        <p class="week-offer__price">Цена: 990 руб.</p>
+        <a class="button week-offer__button" href="#">Заказать</a>
+      </div>
     </section>
     <section class="features">
-      <h2 class="title features__title">Коротко о нас</h2>
+      <h2 class="title title--m features__title">Коротко о нас</h2>
       <ul class="features__list">
         <li class="features__item">Экологически чистые материалы</li>
         <li class="features__item">Скандинавский стиль по российской цене</li>
@@ -70,7 +79,7 @@
       </ul>
     </section>
     <section class="feedback">
-      <h2 class="title feedback__title">Отзывы</h2>
+      <h2 class="title title--m feedback__title">Отзывы</h2>
       <blockquote class="feedback__text">
         <p>
           Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
@@ -87,7 +96,7 @@
       <a class="button feedback__button" href="#">Написать</a>
     </section>
     <section class="contacts">
-      <h2 class="title contacts__title">Контакты</h2>
+      <h2 class="title title--m contacts__title">Контакты</h2>
       <p class="contacts__field">
         <span class="contacts__name">e-mail:</span>
         <span class="contacts__value"><a class="contacts__email-adress" href="#">info@mimimishkashop.ru</a></span>

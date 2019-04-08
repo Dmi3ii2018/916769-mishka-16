@@ -1,0 +1,28 @@
+.goods-type {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.goods-type__item {
+  box-sizing: border-box;
+  height: 103px;
+  font-family: "opensans", Arial, sans-serif;
+  font-size: 19px;
+  font-weight: 800;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 29px;
+}
+
+.goods-type__item--interier {
+  background-color: #63d1bb;
+}
+
+.goods-type__item--toys {
+  background-color: #56c3b2;
+}
+
+.goods-type__link {
+  color: #ffffff;
+}

@@ -1,0 +1,17 @@
+.week-offer__title {
+  text-transform: uppercase;
+  color: #63d1bb;
+}
+
+.week-offer__name {
+  margin-top: 30px;
+}
+
+.week-offer__description {
+  line-height: 24px;
+}
+
+.week-offer__price {
+  @include font-bold(17px);
+  margin: 28px 0;
+}
