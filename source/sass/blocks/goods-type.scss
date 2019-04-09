@@ -1,13 +1,11 @@
 .goods-type {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include list-clear;
 }
 
 .goods-type__item {
   box-sizing: border-box;
   height: 103px;
-  font-family: "opensans", Arial, sans-serif;
+  font-family: "opensans", "Arial", sans-serif;
   font-size: 19px;
   font-weight: 800;
   padding-top: 30px;
