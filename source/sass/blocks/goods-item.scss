@@ -1,0 +1,14 @@
+.goods-item__description-wrapper {
+  padding-left: 28px;
+}
+
+.goods-item__description {
+  font-size: 13px;
+  line-height: 30px;
+}
+
+.goods-item__price {
+  @include font-bold;
+  line-height: 24px;
+  color: #000000;
+}

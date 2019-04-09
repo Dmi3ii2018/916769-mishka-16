@@ -1,10 +1,9 @@
 body {
   width: 320px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
-  font-family: "opensans", Arial, sans-serif;
+  @include font-regular;
   font-size: 15px;
-  font-weight: 400;
   color: #444444;
   background-color: #ffffff;
 }

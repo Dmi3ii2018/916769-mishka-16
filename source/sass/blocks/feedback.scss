@@ -1,0 +1,16 @@
+.feedback__item {
+  margin: 0;
+}
+
+.feedback__text {
+  line-height: 30px;
+}
+
+.feedback__writer-name {
+  @include font-bold;
+  line-height: 30px;
+  font-style: normal;
+  font-size: 17px;
+  color: #000000;
+
+}

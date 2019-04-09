@@ -1,9 +1,13 @@
 .site-list {
-  padding: 0;
-  margin: 0;
+  @include list-clear;
   font-family: "opensans", Arial, sans-serif;
   font-weight: 800;
   font-size: 17px;
   line-height: 24px;
-  list-style: none;
+}
+
+.site-list__item {
+  padding-top: 32px;
+  padding-bottom: 30px;
+  padding-left: 76px;
 }

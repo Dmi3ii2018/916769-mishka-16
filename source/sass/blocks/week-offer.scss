@@ -12,6 +12,7 @@
 }
 
 .week-offer__price {
-  @include font-bold(17px);
+  @include font-bold;
+  font-size: 17px;
   margin: 28px 0;
 }
