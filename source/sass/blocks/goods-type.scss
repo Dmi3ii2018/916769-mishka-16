@@ -3,14 +3,9 @@
 }
 
 .goods-type__item {
+  @include font-bold;
   box-sizing: border-box;
-  height: 103px;
-  font-family: "opensans", "Arial", sans-serif;
   font-size: 19px;
-  font-weight: 800;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 29px;
 }
 
 .goods-type__item--interier {
@@ -22,5 +17,19 @@
 }
 
 .goods-type__link {
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  width: 100%;
   color: #ffffff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.goods-type__name {
+  display: inline-block;
+  vertical-align: middle;
+  width: 150px;
 }

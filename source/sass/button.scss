@@ -1,8 +1,11 @@
 .button {
   @include font-bold;
-  display: inline-block;
-  height: 52px;
-  width: 255px;
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
   font-size: 17px;
   color: #444444;
   text-align: center;

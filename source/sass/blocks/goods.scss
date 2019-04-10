@@ -1,7 +1,11 @@
-.goods-list {
-  @include list-clear;
-}
-
 .goods__title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 73px;
+  padding-bottom: 73px;
+  box-sizing: border-box;
   background-color: #f1f1f1;
 }

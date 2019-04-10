@@ -2,6 +2,14 @@
   background-color: #f1f1f1;
 }
 
+.page-footer__social {
+  @include list-clear;
+}
+
+.page-footer__copyright {
+  text-align: center;
+}
+
 .page-footer__copyright-text {
   @include font-bold;
   font-size: 19px;
