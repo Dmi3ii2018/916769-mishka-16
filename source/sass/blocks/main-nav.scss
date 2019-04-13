@@ -1,0 +1,19 @@
+.main-nav {
+  position: relative;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  transform: translateY(-50%);
+  z-index: 2;
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #000000;
+  box-shadow: 0 6px 0 0 #000000, 0 12px 0 0 #000000;
+  cursor: pointer;
+  border: none;
+  font-size: 0;
+}

@@ -1,7 +1,7 @@
 @import "fonts.scss";
 @import "mixin.scss";
 @import "scaffolding.scss";
-@import "center-wrapper.scss";
+@import "blocks/center-wrapper.scss";
 @import "button.scss";
 @import "blocks/page-header.scss";
 @import "blocks/site-list.scss";
@@ -17,3 +17,6 @@
 @import "blocks/fabrication.scss";
 @import "blocks/map.scss";
 @import "blocks/goods-list.scss";
+@import "blocks/main-wrapper.scss";
+@import "blocks/main-nav";
+@import "blocks/logo.scss";
