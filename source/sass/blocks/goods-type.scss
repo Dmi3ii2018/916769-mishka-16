@@ -1,0 +1,36 @@
+.goods-type {
+  @include list-clear;
+}
+
+.goods-type__item {
+  @include font-bold;
+  box-sizing: border-box;
+  font-size: 19px;
+}
+
+.goods-type__item--interier {
+  background-color: #63d1bb;
+}
+
+.goods-type__item--toys {
+  background-color: #56c3b2;
+}
+
+.goods-type__link {
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  width: 100%;
+  color: #ffffff;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.goods-type__name {
+  display: inline-block;
+  vertical-align: middle;
+  width: 150px;
+  line-height: 24px;
+}

@@ -1,0 +1,14 @@
+.site-list {
+  @include list-clear;
+  @include font-bold;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.site-list__item {
+  padding-top: 28px;
+  padding-bottom: 28px;
+  padding-left: 76px;
+  padding-right: 30px;
+  border-top: 1px solid #ececec;
+}
