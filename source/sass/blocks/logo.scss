@@ -1,13 +1,8 @@
 .logo {
-  @include hover-active;
   display: inline-block;
   vertical-align: middle;
   padding-left: 116px;
   padding-top: 22px;
   padding-bottom: 22px;
   padding-right: 30px;
-}
-
-.logo--unactive {
-  cursor: default;
 }

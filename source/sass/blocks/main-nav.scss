@@ -17,3 +17,9 @@
   border: none;
   font-size: 0;
 }
+
+.main-nav a[href] {
+  &:hover {
+    @include hover-active;
+  }
+}
