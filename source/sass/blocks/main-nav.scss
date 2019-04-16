@@ -2,6 +2,12 @@
   position: relative;
 }
 
+@media (min-width: $tablet-width) {
+  .main-nav {
+    display: flex;
+  }
+}
+
 .main-nav__toggle {
   position: absolute;
   top: 30px;
@@ -18,8 +24,35 @@
   font-size: 0;
 }
 
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+
 .main-nav a[href] {
-  &:hover {
-    @include hover-active;
+  @include hover-active;
+}
+
+.main-nav a[href]:hover {
+  & .site-list__image {
+    fill: #63d1bb;
+    opacity: 1;
+  }
+
+  & .site-list__text {
+    opacity: 0.6;
+  }
+}
+
+.main-nav a[href]:active {
+  & .site-list__image {
+    fill: #63d1bb;
+    opacity: 0.3;
+  }
+
+  & .site-list__text {
+    opacity: 0.3;
   }
 }

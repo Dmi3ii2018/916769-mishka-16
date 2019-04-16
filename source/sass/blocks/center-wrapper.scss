@@ -5,3 +5,10 @@
   padding-right: 30px;
   margin: 0 auto;
 }
+
+@media (min-width: $tablet-width) {
+  .center-wrapper {
+    padding-left: 52px;
+    padding-right: 52px;
+  }
+}

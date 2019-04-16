@@ -6,3 +6,9 @@
   padding-bottom: 22px;
   padding-right: 30px;
 }
+
+@media (min-width: $tablet-width) {
+  .logo {
+    display: none;
+  }
+}
