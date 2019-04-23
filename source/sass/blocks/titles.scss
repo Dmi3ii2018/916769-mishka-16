@@ -11,17 +11,27 @@
   font-size: 25px;
 }
 
+.title--xs {
+  font-size: 18px;
+  line-height: 30px;
+}
+
 @media (min-width: $tablet-width) {
   .title,
-  .title--m {
+  .title--m,
+  .title--xs {
     font-size: 43px;
     line-height: 50px;
   }
 }
 
-.title--xs {
-  font-size: 18px;
-  line-height: 30px;
+@media (min-width: $desktop-width) {
+  .title,
+  .title--m,
+  .title--xs {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .title--s {

@@ -6,6 +6,7 @@
   .goods-type {
     display: flex;
     flex-wrap: wrap;
+    min-height: 119px;
     margin-top: -119px;
   }
 }
@@ -19,7 +20,6 @@
 @media (min-width: $tablet-width) {
   .goods-type__item {
     flex-grow: 1;
-    min-height: 119px;
   }
 }
 

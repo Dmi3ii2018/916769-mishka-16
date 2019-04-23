@@ -1,9 +1,8 @@
 .center-wrapper {
-  padding-top: 0;
-  padding-bottom: 0;
   padding-left: 30px;
   padding-right: 30px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: $tablet-width) {
@@ -12,3 +11,10 @@
     padding-right: 52px;
   }
 }
+/*
+@media (min-width: $desktop-width) {
+  .center-wrapper {
+    padding-left: 225px;
+  }
+}
+*/

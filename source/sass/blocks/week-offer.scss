@@ -1,14 +1,28 @@
 @media (min-width: $tablet-width) {
   .week-offer {
+    position: relative;
     flex-wrap: wrap;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .week-offer {
+    margin-top: 100px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .week-offer__wrapper {
     width: 292px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .week-offer__wrapper {
+    margin-left: 125px;
   }
 }
 
@@ -20,9 +34,21 @@
 @media (min-width: $tablet-width) {
   .week-offer__title {
     margin-left: auto;
-    margin-top: 55px;
     margin-right: 27px;
     width: 70px;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .week-offer__title {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .week-offer__title {
+    order: -1;
   }
 }
 
@@ -37,6 +63,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .week-offer__name {
+    width: 722px;
+    margin-left: 24px;
+  }
+}
 
 .week-offer__description {
   line-height: 24px;
@@ -62,18 +94,19 @@
   }
 }
 
-.week-offer__image--tablet {
-  display: none;
+@media (min-width: $tablet-width) {
+  .week-offer__image {
+    position: absolute;
+    top: 9px;
+    right: 0;
+  }
 }
 
-@media (min-width: $tablet-width) {
-  .week-offer__image--tablet {
-    display: inline-block;
-    margin-left: auto;
-  }
-
-  .week-offer__image--mobile {
-    display: none;
+@media (min-width: $desktop-width) {
+  .week-offer__image {
+    position: absolute;
+    top: 9px;
+    right: 0;
   }
 }
 

@@ -1,3 +1,33 @@
+@media (min-width: $tablet-width) {
+  .feedback {
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 122px;
+    padding-top: 86px;
+    margin-top: 80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback {
+    padding-left: 175px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__title {
+    order: -2;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__button {
+    order: -1;
+  }
+}
+
 .feedback__item {
   margin: 0;
 }
