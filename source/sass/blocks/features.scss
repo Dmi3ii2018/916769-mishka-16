@@ -11,6 +11,7 @@
 @media (min-width: $desktop-width) {
   .features {
     padding-left: 175px;
+    padding-right: 229px;
   }
 }
 
@@ -28,11 +29,17 @@
 @media (min-width: $tablet-width) {
   .features__list {
     column-count: 2;
-    column-gap: 100px;
+    column-gap: 78px;
   }
 }
 
 .features__item {
   padding-top: 57px;
   margin-bottom: 33px;
+}
+
+@media (min-width: $tablet-width) {
+  .features__item {
+    font-size: 20px;
+  }
 }

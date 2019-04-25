@@ -11,11 +11,12 @@
     &::before {
       content: "";
       display: block;
-      width: 115px;
+      width: 250px;
       height: 50px;
+      margin-right: 20px;
       background-color: #ececec;
       background-image: url("../img/logo-tablet.svg");
-      background-position: center center;
+      background-position: left center;
       background-repeat: no-repeat;
     }
   }
@@ -27,6 +28,13 @@
 
 .page-footer__copyright {
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__copyright {
+    width: 250px;
+    margin-left: 20px;
+  }
 }
 
 .page-footer__copyright-text {

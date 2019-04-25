@@ -1,5 +1,6 @@
 .contacts {
-  margin-top: 90px;
+  padding-top: 46px;
+  margin-top: 46px;
   margin-bottom: 39px;
 }
 
@@ -29,14 +30,7 @@
 
 .contacts__field {
   display: flex;
-  justify-content: space-between;
-}
-
-@media (min-width: $tablet-width) {
-  .contacts-field {
-    flex-wrap: wrap;
-    width: 300px;
-  }
+  justify-content: flex-start;
 }
 
 @media (min-width: $tablet-width) {
@@ -46,9 +40,15 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .contacts__field--address {
     margin-left: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__value {
+    margin-left: 26px;
   }
 }
 
