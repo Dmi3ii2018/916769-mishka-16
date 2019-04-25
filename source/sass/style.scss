@@ -1,10 +1,12 @@
 @import "fonts.scss";
 @import "mixin.scss";
 @import "scaffolding.scss";
+@import "variables.scss";
 @import "blocks/center-wrapper.scss";
 @import "blocks/button.scss";
 @import "blocks/page-header.scss";
 @import "blocks/site-list.scss";
+@import "blocks/promotion.scss";
 @import "blocks/titles.scss";
 @import "blocks/goods-type.scss";
 @import "blocks/week-offer.scss";
@@ -15,8 +17,10 @@
 @import "blocks/goods.scss";
 @import "blocks/goods-item.scss";
 @import "blocks/fabrication.scss";
-@import "blocks/map.scss";
 @import "blocks/goods-list.scss";
 @import "blocks/main-wrapper.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/logo.scss";
+@import "blocks/slider-button.scss";
+@import "blocks/contacts.scss";
+@import "blocks/page-main.scss"

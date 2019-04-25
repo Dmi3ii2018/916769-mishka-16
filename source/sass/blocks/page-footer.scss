@@ -2,12 +2,39 @@
   background-color: #f1f1f1;
 }
 
+@media (min-width: $tablet-width) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 250px;
+      height: 50px;
+      margin-right: 20px;
+      background-color: #ececec;
+      background-image: url("../img/logo-tablet.svg");
+      background-position: left center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
 .page-footer__social {
   @include list-clear;
 }
 
 .page-footer__copyright {
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__copyright {
+    width: 250px;
+    margin-left: 20px;
+  }
 }
 
 .page-footer__copyright-text {

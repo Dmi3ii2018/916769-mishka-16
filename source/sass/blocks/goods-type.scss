@@ -2,10 +2,34 @@
   @include list-clear;
 }
 
+@media (min-width: $tablet-width) {
+  .goods-type {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 119px;
+    margin-top: -119px;
+    padding-left: $tablet-indent;
+    padding-right: $tablet-indent;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .goods-type {
+    padding-left: $desktop-indent;
+    padding-right: $desktop-indent;
+  }
+}
+
 .goods-type__item {
   @include font-bold;
   box-sizing: border-box;
   font-size: 19px;
+}
+
+@media (min-width: $tablet-width) {
+  .goods-type__item {
+    flex-grow: 1;
+  }
 }
 
 .goods-type__item--interier {
