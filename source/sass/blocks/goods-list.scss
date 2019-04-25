@@ -2,11 +2,6 @@
   @include list-clear;
 }
 
-@media (min-width: $tablet-width) {
-  .goods-list {
-  }
-}
-
 @media (min-width: $desktop-width) {
   .goods-list {
     display: flex;
