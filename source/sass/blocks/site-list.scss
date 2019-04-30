@@ -1,6 +1,7 @@
 .site-list {
   @include list-clear;
   @include font-bold;
+  width: 100%;
   font-size: 17px;
   line-height: 24px;
 }
@@ -13,11 +14,21 @@
 }
 
 .site-list__item {
-  padding-top: 30px;
+  padding-top: 25px;
   padding-bottom: 30px;
   padding-left: 76px;
   padding-right: 30px;
   border-top: 1px solid #ececec;
+}
+
+.site-list__item--bin {
+  border-bottom: 1px solid #ececec;
+}
+
+.site-list__image {
+  padding-left: 32px;
+  padding-right: 20px;
+  opacity: 0.2;
 }
 
 @media (min-width: $tablet-width) {

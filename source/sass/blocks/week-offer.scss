@@ -29,6 +29,7 @@
 .week-offer__title {
   text-transform: uppercase;
   color: #63d1bb;
+  line-height: 30px;
 }
 
 @media (min-width: $tablet-width) {
@@ -86,6 +87,9 @@
   @include font-bold;
   font-size: 17px;
   margin: 28px 0;
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 22px;
 }
 
 @media (min-width: $tablet-width) {
@@ -110,9 +114,23 @@
   }
 }
 
+.week-offer__value {
+  padding-left: 24px;
+}
+
+.week-offer__table {
+  margin-bottom: 28px;
+}
+
+.week-offer__table td{
+  padding-top: 7px;
+  border-bottom: 1px solid #ececec;
+}
+
 @media (min-width: $tablet-width) {
   .week-offer__table {
     margin-top: 50px;
+    width: 260px;
   }
 }
 

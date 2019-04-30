@@ -1,0 +1,38 @@
+.slider {
+  margin-top: 29px;
+  margin-bottom: 36px;
+}
+
+.slider-button {
+  width: 129px;
+  height: 52px;
+  font-size: 0;
+  background-color: #ffffff;
+  padding: 0;
+  border: 1px solid #ececec;
+  background-repeat: no-repeat;
+  background-size: 50px 26px;
+  background-position: center;
+
+  &:hover {
+    @include hover-active;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .slider-button {
+    position: absolute;
+    right: 50px;
+    bottom: 122px;
+  }
+}
+
+.slider-button__left {
+  background-image: url("../img/icon-left-arrow.svg");
+}
+
+.slider-button__right {
+  margin-left: -3px;
+  background-image: url("../img/icon-right-arrow.svg");
+  border-left: none;
+}

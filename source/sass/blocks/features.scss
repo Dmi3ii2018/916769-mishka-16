@@ -1,5 +1,18 @@
 .features {
-  margin-top: 70px;
+  margin-top: 34px;
+
+  &::before {
+    content: "";
+    display: block;
+    height: 8px;
+    background-image: url(../img/bg-zigzag-line.svg);
+    background-repeat: no-repeat;
+    background-size: 338px 8px;
+    background-position: center;
+    width: 320px;
+    margin-left: -30px;
+    margin-bottom: 26px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -34,8 +47,64 @@
 }
 
 .features__item {
+  position: relative;
   padding-top: 57px;
-  margin-bottom: 33px;
+  margin-bottom: 28px;
+  line-height: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    vertical-align: middle;
+    height: 38px;
+    width: 55px;
+    background-repeat: no-repeat;
+  }
+}
+
+.features__item--material {
+  padding-top: 54px;
+
+  &::before {
+    left: 6px;
+    background-image: url("../img/icon-feature-flower.svg");
+  }
+}
+
+.features__item--style::before {
+  background-image: url("../img/icon-feature-money.svg");
+}
+
+.features__item--like::before {
+  top: 7px;
+  left: 8px;
+  background-image: url("../img/icon-feature-heart.svg");
+}
+
+.features__item--handmade {
+  padding-top: 53px;
+
+  &::before {
+  background-image: url("../img/icon-feature-ball.svg");
+  }
+}
+
+.features__item--localmade::before {
+  top: 4px;
+  left: -6px;
+  background-image: url("../img/icon-feature-rocket.svg");
+}
+
+.features__item--giftwrap {
+  padding-top: 52px;
+
+  &::before {
+  left: 3px;
+  background-image: url("../img/icon-feature-gift.svg");
+  }
 }
 
 @media (min-width: $tablet-width) {

@@ -22,8 +22,26 @@
 
 .goods-type__item {
   @include font-bold;
+  display: flex;
+  align-items: center;
   box-sizing: border-box;
   font-size: 19px;
+  padding-right: 26px;
+
+  &:after {
+    content: "";
+    display: inline-block;
+    width: 80px;
+    height: 62px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 62px 62px;
+    opacity: 0.5;
+  }
+
+  &:hover {
+    padding-bottom: 5px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -32,12 +50,20 @@
   }
 }
 
-.goods-type__item--interier {
+.goods-type__item--interior {
   background-color: #63d1bb;
+}
+
+.goods-type__item--interior::after {
+  background-image: url("../img/icon-interior.svg");
 }
 
 .goods-type__item--toys {
   background-color: #56c3b2;
+}
+
+.goods-type__item--toys::after {
+  background-image: url("../img/icon-toy.svg");
 }
 
 .goods-type__link {
@@ -49,7 +75,6 @@
   padding-top: 27px;
   padding-bottom: 27px;
   padding-left: 30px;
-  padding-right: 30px;
 }
 
 .goods-type__name {
