@@ -41,22 +41,19 @@
 }
 
 .page-footer__copyright-text {
+  @include font-bold;
   margin-right: 32px;
   padding-bottom: 19px;
-}
-
-.page-footer__copyright-text {
-  @include font-bold;
   font-size: 19px;
   line-height: 18px;
   color: #000000;
 }
 
 .page-footer__copyright-link {
-padding-bottom: 5px;
+  padding-bottom: 5px;
 }
 
-.page-footer__copyright-link svg{
+.page-footer__copyright-link svg {
   fill: #63d1bb;
 
   &:hover {
@@ -67,4 +64,3 @@ padding-bottom: 5px;
     opacity: 0.3;
   }
 }
-

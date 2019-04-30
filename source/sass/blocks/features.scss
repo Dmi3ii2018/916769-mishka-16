@@ -5,7 +5,7 @@
     content: "";
     display: block;
     height: 8px;
-    background-image: url(../img/bg-zigzag-line.svg);
+    background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: no-repeat;
     background-size: 338px 8px;
     background-position: center;
@@ -88,7 +88,7 @@
   padding-top: 53px;
 
   &::before {
-  background-image: url("../img/icon-feature-ball.svg");
+    background-image: url("../img/icon-feature-ball.svg");
   }
 }
 
@@ -102,8 +102,8 @@
   padding-top: 52px;
 
   &::before {
-  left: 3px;
-  background-image: url("../img/icon-feature-gift.svg");
+    left: 3px;
+    background-image: url("../img/icon-feature-gift.svg");
   }
 }
 
