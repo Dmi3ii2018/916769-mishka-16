@@ -14,7 +14,8 @@
   .page-header {
     padding-left: $tablet-indent;
     padding-right: $tablet-indent;
-    margin-bottom: -84px;
+    margin-bottom: -76px;
+    z-index: 10;
   }
 }
 

@@ -3,7 +3,17 @@
   margin-bottom: 36px;
 }
 
-.slider-button {
+@media (min-width: $tablet-width) {
+  .slider {
+    position: absolute;
+    right: 53px;
+    bottom: 48px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.slider__button {
   width: 129px;
   height: 52px;
   font-size: 0;
@@ -20,18 +30,17 @@
 }
 
 @media (min-width: $tablet-width) {
-  .slider-button {
-    position: absolute;
-    right: 50px;
-    bottom: 122px;
+  .slider__button {
+    width: 84px;
+    border: none;
   }
 }
 
-.slider-button__left {
+.slider__button--left {
   background-image: url("../img/icon-left-arrow.svg");
 }
 
-.slider-button__right {
+.slider__button--right {
   margin-left: -3px;
   background-image: url("../img/icon-right-arrow.svg");
   border-left: none;

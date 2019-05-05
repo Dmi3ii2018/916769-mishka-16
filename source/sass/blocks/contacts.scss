@@ -11,17 +11,46 @@
     background-repeat: no-repeat;
     background-size: 338px 8px;
     background-position: center;
-    width: 320px;
+    margin-right: -30px;
+    margin-left: -30px;
     margin-bottom: 37px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .contacts {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    margin-top: 69px;
+    margin-bottom: 0;
     padding-bottom: 57px;
+    padding-top: 0;
+
+    &::before {
+      width: 768px;
+      height: 16px;
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 62px;
+      background-position: -20px;
+      background-size: 771px 16px;
+      background-repeat: repeat-x;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 63px;
+      right: 53px;
+      display: inline-block;
+      width: 47px;
+      height: 81px;
+      background-image: url("../img/icon-flag.svg");
+      background-size: 47px 81px;
+      background-repeat: no-repeat;
+    }
   }
 }
 
@@ -47,9 +76,16 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contacts__field {
+    margin-top: 48px;
+    font-size: 17px;
+  }
+}
+
+@media (min-width: $tablet-width) {
   .contacts__field--address {
     width: 300px;
-    margin-left: 55px;
+    margin-left: 40px;
   }
 }
 
@@ -63,21 +99,55 @@
   margin-left: 31px;
 }
 
+@media (min-width: $tablet-width) {
+  .contacts__value {
+
+    & br:not(first-of-type) {
+      display: none;
+    }
+  }
+}
+
 .contacts__email-address {
   border-bottom: 1px solid #63d1bb;
+
+  &:hover {
+    color: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .contacts__wrapper {
   padding-bottom: 24px;
 }
 
-.contacts iframe {
-  position: absolute;
-  z-index: 26;
+@media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 0;
+  }
+}
+.contacts__map-wrapper {
+  position: relative;
 }
 
-.contacts-map-wrapper {
-  position: relative;
+@media (min-width: $tablet-width) {
+  .contacts__map-wrapper {
+    width: 100%;
+    height: 457px;
+    margin-top: 14px;
+    overflow: hidden; //временное правило
+  }
+}
+
+.contacts__map-wrapper iframe {
+  position: absolute;
+  z-index: 26;
 }
 
 @media (min-width: $tablet-width) {
@@ -94,7 +164,7 @@
   }
 }
 
-.contacts__button {
+.contacts__button-wrapper {
   margin: 0 auto;
   width: 260px;
   box-sizing: border-box;
@@ -102,9 +172,9 @@
 }
 
 @media (min-width: $tablet-width) {
-  .contacts__button {
-    margin-left: auto;
-    margin-right: auto;
+  .contacts__button-wrapper {
+    width: 230px;
+    margin-top: 57px;
   }
 }
 

@@ -7,7 +7,7 @@
     display: flex;
     flex-wrap: wrap;
     min-height: 119px;
-    margin-top: -119px;
+    margin-top: -115px;
     padding-left: $tablet-indent;
     padding-right: $tablet-indent;
   }
@@ -22,25 +22,50 @@
 
 .goods-type__item {
   @include font-bold;
-  display: flex;
-  align-items: center;
   box-sizing: border-box;
   font-size: 19px;
-  padding-right: 26px;
+}
 
-  &::after {
-    content: "";
-    display: inline-block;
-    width: 80px;
-    height: 62px;
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: 62px 62px;
-    opacity: 0.5;
-  }
+.goods-type__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+  padding-top: 23px;
+  padding-bottom: 18px;
+  padding-left: 30px;
+  padding-right: 28px;
 
   &:hover {
-    padding-bottom: 5px;
+    padding-top: 18px;
+    padding-bottom: 28px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.goods-type__link::after {
+  content: "";
+  display: inline-block;
+  width: 80px;
+  height: 62px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 62px 62px;
+  opacity: 0.5;
+}
+
+@media (min-width: $tablet-width) {
+  .goods-type__link {
+    padding-top: 25px;
+    padding-bottom: 27px;
+
+    &:hover {
+      padding-top: 20px;
+      padding-bottom: 37px;
+    }
   }
 }
 
@@ -54,27 +79,30 @@
   background-color: #63d1bb;
 }
 
-.goods-type__item--interior::after {
-  background-image: url("../img/icon-interior.svg");
+.goods-type__item--interior a {
+
+  &:hover {
+    background-color: #59d5bc;
+  }
+
+  &:after {
+    background-image: url("../img/icon-interior.svg");
+  }
 }
 
 .goods-type__item--toys {
   background-color: #56c3b2;
 }
 
-.goods-type__item--toys::after {
-  background-image: url("../img/icon-toy.svg");
-}
+.goods-type__item--toys a {
 
-.goods-type__link {
-  display: inline-block;
-  vertical-align: middle;
-  box-sizing: border-box;
-  width: 100%;
-  color: #ffffff;
-  padding-top: 27px;
-  padding-bottom: 27px;
-  padding-left: 30px;
+  &:hover {
+      background-color: #46c1ae;
+  }
+
+  &::after {
+  background-image: url("../img/icon-toy.svg");
+  }
 }
 
 .goods-type__name {
@@ -82,4 +110,11 @@
   vertical-align: middle;
   width: 150px;
   line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .goods-type__name {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

@@ -37,8 +37,5 @@
   ],
   "engines": {
     "node": "8.15"
-  },
-  "dependencies": {
-    "dev-ip": "^1.0.1"
   }
 }
