@@ -101,8 +101,7 @@
 
 @media (min-width: $tablet-width) {
   .contacts__value {
-
-    & br:not(first-of-type) {
+    & br {
       display: none;
     }
   }
@@ -132,6 +131,7 @@
     padding-top: 0;
   }
 }
+
 .contacts__map-wrapper {
   position: relative;
 }

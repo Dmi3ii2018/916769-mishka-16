@@ -80,12 +80,11 @@
 }
 
 .goods-type__item--interior a {
-
   &:hover {
     background-color: #59d5bc;
   }
 
-  &:after {
+  &::after {
     background-image: url("../img/icon-interior.svg");
   }
 }
@@ -95,13 +94,12 @@
 }
 
 .goods-type__item--toys a {
-
   &:hover {
-      background-color: #46c1ae;
+    background-color: #46c1ae;
   }
 
   &::after {
-  background-image: url("../img/icon-toy.svg");
+    background-image: url("../img/icon-toy.svg");
   }
 }
 
