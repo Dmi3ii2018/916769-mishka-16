@@ -22,8 +22,22 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .page-footer {
+    margin-top: 50px;
+  }
+}
+
 .page-footer__social {
+  padding-top: 8px;
+  box-sizing: border-box;
   border-bottom: 1px solid #ececec;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__social {
+    margin-top: 8px;
+  }
 }
 
 .page-footer__copyright {
@@ -44,7 +58,7 @@
 .page-footer__copyright-text {
   @include font-bold;
   margin-right: 32px;
-  padding-bottom: 19px;
+  padding-bottom: 11px;
   font-size: 19px;
   line-height: 18px;
   color: #000000;
@@ -53,12 +67,12 @@
 @media (min-width: $tablet-width) {
   .page-footer__copyright-text {
     padding-bottom: 0;
+    margin-right: 26px;
   }
 }
 
 .page-footer__copyright-link {
   fill: #63d1bb;
-  padding-bottom: 5px;
 
   &:hover {
     fill: #46c1ae;

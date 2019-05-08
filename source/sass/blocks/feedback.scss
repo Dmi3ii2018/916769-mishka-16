@@ -11,7 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding-top: 79px;
+    padding-top: 78px;
     margin-top: 27px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
@@ -22,7 +22,10 @@
 
 @media (min-width: $desktop-width) {
   .feedback {
-    padding-left: 175px;
+    margin-top: 31px;
+    padding-left: 226px;
+    padding-top: 71px;
+    background-position: $desktop-indent top;
   }
 }
 
@@ -33,10 +36,16 @@
 }
 
 @media (min-width: $tablet-width) {
-  .feedback__button {
+  .feedback__button-write {
     order: -1;
     width: 175px;
     height: 52px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback__button-write {
+    margin-top: 9px;
   }
 }
 
@@ -52,9 +61,18 @@
 
 @media (min-width: $tablet-width) {
   .feedback__text {
+    width: 645px;
     font-size: 17px;
-    margin-top: 0;
-    margin-bottom: 57px;
+    margin-top: -5px;
+    margin-bottom: 53px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback__text {
+    width: 770px;
+    margin-top: -47px;
+    margin-bottom: 35px;
   }
 }
 
@@ -80,4 +98,60 @@
   .feedback__writer-name {
     font-size: 18px;
   }
+}
+
+
+.feedback__button-wrapper {
+  margin-top: 29px;
+  margin-bottom: 36px;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__button-wrapper {
+    position: absolute;
+    right: 53px;
+    bottom: 48px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .feedback__button-wrapper {
+    bottom: 97px;
+  }
+}
+
+.feedback__button {
+  width: 129px;
+  height: 52px;
+  font-size: 0;
+  background-color: #ffffff;
+  padding: 0;
+  border: 1px solid #ececec;
+  background-repeat: no-repeat;
+  background-size: 50px 26px;
+  background-position: center;
+
+  &:hover {
+    @include hover-active;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__button {
+    width: 84px;
+    border: none;
+  }
+}
+
+.feedback__button--left {
+  background-image: url("../img/icon-left-arrow.svg");
+}
+
+.feedback__button--right {
+  margin-left: -3px;
+  background-image: url("../img/icon-right-arrow.svg");
+  border-left: none;
 }

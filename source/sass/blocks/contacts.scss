@@ -11,8 +11,8 @@
     background-repeat: no-repeat;
     background-size: 338px 8px;
     background-position: center;
-    margin-right: -30px;
-    margin-left: -30px;
+    margin-right: -$mobile-indent;
+    margin-left: -$mobile-indent;
     margin-bottom: 37px;
   }
 }
@@ -48,7 +48,7 @@
       width: 47px;
       height: 81px;
       background-image: url("../img/icon-flag.svg");
-      background-size: 47px 81px;
+      background-size: 100%;
       background-repeat: no-repeat;
     }
   }
@@ -56,10 +56,24 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
     position: relative;
-    padding-left: 175px;
+    padding-left: $desktop-indent;
+    padding-right: $desktop-indent;
+
+    &::before {
+      flex-grow: 1;
+      height: 23px;
+      margin-bottom: 55px;
+      background-size: 100%;
+      background-repeat: repeat-x;
+    }
+
+    &::after {
+      top: 155px;
+      left: 113px;
+    }
   }
 }
 
@@ -84,8 +98,9 @@
 
 @media (min-width: $tablet-width) {
   .contacts__field--address {
-    width: 300px;
-    margin-left: 40px;
+    width: 305px;
+    margin-left: 54px;
+    margin-top: 14px;
   }
 }
 
@@ -101,9 +116,17 @@
 
 @media (min-width: $tablet-width) {
   .contacts__value {
-    & br {
+    margin-left: 22px;
+
+    & br:not(:first-of-type) {
       display: none;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__value {
+    margin-left: 26px;
   }
 }
 
@@ -127,8 +150,20 @@
   .contacts__wrapper {
     width: 100%;
     display: flex;
+    align-items: baseline;
     flex-wrap: wrap;
     padding-top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__wrapper {
+    width: 350px;
+    padding-left: 174px;
+    padding-top: 85px;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -145,9 +180,19 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .contacts__map-wrapper {
+    width: 525px;
+  }
+}
+
 .contacts__map-wrapper iframe {
   position: absolute;
   z-index: 26;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 @media (min-width: $tablet-width) {
@@ -174,7 +219,14 @@
 @media (min-width: $tablet-width) {
   .contacts__button-wrapper {
     width: 230px;
-    margin-top: 57px;
+    margin-top: 58px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__button-wrapper {
+    margin-top: -51px;
+    margin-left: 175px;
   }
 }
 

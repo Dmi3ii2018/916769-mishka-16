@@ -9,8 +9,8 @@
     background-repeat: no-repeat;
     background-size: 338px 8px;
     background-position: center;
-    margin-right: -30px;
-    margin-left: -30px;
+    margin-right: -$mobile-indent;
+    margin-left: -$mobile-indent;
     margin-bottom: 26px;
   }
 }
@@ -22,18 +22,30 @@
     &::before {
       width: 768px;
       height: 16px;
-      margin-left: -52px;
-      margin-bottom: 51px;
+      margin-left: -$tablet-indent;
+      margin-bottom: 47px;
       background-size: 771px 16px;
       background-position: 20px;
+      background-repeat: repeat-x;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .features {
-    padding-left: 175px;
+    padding-left: 221px;
     padding-right: 229px;
+    margin-top: 73px;
+
+    &::before {
+      width: 1050px;
+      height: 23px;
+      margin-left: -171px;
+      margin-bottom: 60px;
+      background-size: 100%;
+      background-repeat: repeat-x;
+      background-position: 25px;
+    }
   }
 }
 
@@ -95,6 +107,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .features__item--material {
+    padding-top: 57px;
+  }
+}
+
 .features__item--style::before {
   background-image: url("../img/icon-feature-money.svg");
 }
@@ -109,7 +127,20 @@
   padding-top: 53px;
 
   &::before {
+    top: 3px;
+    left: 3px;
     background-image: url("../img/icon-feature-ball.svg");
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__item--handmade {
+    padding-top: 57px;
+
+    &::before {
+      top: 3px;
+      left: 5px;
+    }
   }
 }
 
@@ -120,7 +151,7 @@
 }
 
 .features__item--giftwrap {
-  padding-top: 52px;
+  padding-top: 55px;
 
   &::before {
     left: 3px;
