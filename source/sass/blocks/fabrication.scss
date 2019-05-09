@@ -1,10 +1,13 @@
 .fabrication {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  margin-top: 30px;
   margin-bottom: 58px;
 }
 
 .fabrication__description {
+  padding-left: 34px;
+  padding-right: 40px;
+  margin-top: 27px;
+  margin-bottom: 25px;
   font-size: 13px;
   line-height: 24px;
 }
@@ -22,6 +25,11 @@
   }
 }
 
+.fabrication__wrapper {
+  padding-bottom: 31px;
+  border: 1px solid #ececec;
+}
+
 @media (min-width: $tablet-width) {
   .fabrication__wrapper {
     display: flex;
@@ -37,26 +45,69 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .fabrication__button {
-    width: 100%;
-  }
+.fabrication__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fabrication__button {
+  width: 192px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: $tablet-width) {
-  .fabrication__video {
+  .fabrication__button {
+    width: 100%;
+    margin-right: 42px;
+    margin-left: 42px;
+  }
+}
+
+.fabrication__video-wrapper {
+  position: relative;
+  height: 150px;
+  overflow: hidden;
+}
+
+@media (min-width: $tablet-width) {
+  .fabrication__video-wrapper {
     order: -1;
     width: 100%;
-    /* TODO: remove once there is a video */
+    height: auto;
+    padding-right: 404px;
+    padding-bottom: 275px;
+    overflow: unset;
     font-size: 20px;
-    color: red;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .fabrication__video {
+  .fabrication__video-wrapper {
     position: absolute;
     left: 0;
+  }
+}
+
+.fabrication__title {
+  position: relative;
+  padding-top: 26px;
+  padding-bottom: 23px;
+  padding-left: 91px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 34px;
+    top: 47%;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 32px;
+    height: 29px;
+    background-image: url("../img/icon-video.svg");
+    background-repeat: no-repeat;
   }
 }
 
