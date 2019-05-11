@@ -10,6 +10,13 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .main-nav__list li:nth-of-type(2n) {
+    padding-left: 34px;
+    border-left: 1px solid #ececec;
+  }
+}
+
 .main-nav__logo-link {
   margin-left: 50%;
   transform: translateX(-50%);
@@ -68,13 +75,6 @@
       padding-bottom: 32px;
       padding-right: 35px;
     }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .site-list__item--knitting {
-    padding-left: 34px;
-    border-left: 1px solid #ececec;
   }
 }
 

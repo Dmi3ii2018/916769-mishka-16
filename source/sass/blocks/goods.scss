@@ -30,3 +30,14 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .goods__title {
+    padding-top: 96px;
+    padding-bottom: 101px;
+
+    &::after {
+      bottom: -8px;
+    }
+  }
+}

@@ -3,6 +3,20 @@
   margin-bottom: 58px;
 }
 
+@media (min-width: $tablet-width) {
+  .fabrication {
+    margin-top: 53px;
+    margin-bottom: 64px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .fabrication {
+    position: relative;
+    margin-bottom: 121px;
+  }
+}
+
 .fabrication__description {
   padding-left: 34px;
   padding-right: 40px;
@@ -13,15 +27,20 @@
 }
 
 @media (min-width: $tablet-width) {
-  .fabrication {
-    margin-top: 53px;
-    margin-bottom: 109px;
+  .fabrication__description {
+    padding-left: 38px;
+    padding-right: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 30px;
+    font-size: 15px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .fabrication {
-    position: relative;
+  .fabrication__description {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -34,6 +53,7 @@
   .fabrication__wrapper {
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 43px;
   }
 }
 
@@ -61,8 +81,18 @@
 @media (min-width: $tablet-width) {
   .fabrication__button {
     width: 100%;
-    margin-right: 42px;
-    margin-left: 42px;
+    padding-left: 10px;
+    margin-right: 40px;
+    margin-left: 39px;
+    margin-top: 26px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .fabrication__button {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 35px;
   }
 }
 
@@ -88,6 +118,8 @@
   .fabrication__video-wrapper {
     position: absolute;
     left: 0;
+    width: auto;
+    padding-right: 472px;
   }
 }
 
@@ -113,6 +145,25 @@
 
 @media (min-width: $tablet-width) {
   .fabrication__title {
+    padding-top: 37px;
+    padding-left: 105px;
     font-size: 20px;
+
+    &::before {
+      top: 56%;
+      left: 38px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .fabrication__title {
+    padding-left: 0;
+    padding-top: 100px;
+
+    &::before {
+      top: 61px;
+      left: 0;
+    }
   }
 }

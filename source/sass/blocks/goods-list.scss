@@ -16,8 +16,9 @@
   .goods-list {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
     flex-direction: row;
     justify-content: space-between;
+    padding-left: 49px;
+    margin-top: 76px;
   }
 }
