@@ -1,0 +1,26 @@
+.page-header {
+  position: relative;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    padding-left: $tablet-indent;
+    padding-right: $tablet-indent;
+    margin-bottom: -84px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    padding-left: $desktop-indent;
+    padding-right: $desktop-indent;
+  }
+}

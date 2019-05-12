@@ -1,0 +1,6 @@
+.promotion {
+  @include font-bold;
+  @include list-clear;
+  line-height: 24px;
+  display: none;
+}
