@@ -57,7 +57,7 @@
     font-size: 15px;
 
     & li {
-      padding-top: 16px;
+      padding-top: 17px;
     }
   }
 }
@@ -73,7 +73,7 @@
     & li {
       padding-top: 32px;
       padding-bottom: 32px;
-      padding-right: 35px;
+      padding-right: 37px;
     }
   }
 }
@@ -149,15 +149,28 @@
 }
 
 .main-nav__accessory li {
-  padding-left: 21px;
+  padding-left: 27px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__accessory .site-list__item--search {
+    padding-right: 0;
+    padding-top: 25px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .main-nav__accessory li {
-    padding-left: 28px;
+    padding-left: 26px;
     padding-right: 0;
     border-bottom: none;
     border-left: 1px solid #ececec;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__accessory li {
+    padding-left: 28px;
   }
 }
 

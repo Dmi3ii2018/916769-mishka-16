@@ -32,9 +32,9 @@
   align-items: center;
   justify-content: space-between;
   color: #ffffff;
-  padding-top: 20px;
+  padding-top: 19px;
   padding-bottom: 21px;
-  padding-left: 30px;
+  padding-left: 29px;
   padding-right: 28px;
 
   &:hover {
@@ -60,10 +60,10 @@
 
 @media (min-width: $tablet-width) {
   .goods-type__link {
-    padding-top: 27px;
-    padding-bottom: 27px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     padding-right: 24px;
-    padding-left: 34px;
+    padding-left: 36px;
 
     &:hover {
       padding-top: 20px;
@@ -112,6 +112,14 @@
   &::after {
     background-image: url("../img/icon-toy.svg");
     background-position: right;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .goods-type__item--toys a {
+    &::after {
+      background-position: center;
+    }
   }
 }
 

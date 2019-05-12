@@ -32,7 +32,7 @@
 .goods-item__description-wrapper {
   padding-left: 28px;
   padding-right: 28px;
-  padding-top: 27px;
+  padding-top: 25px;
   margin-top: -1px;
   border: 1px solid #ececec;
 }
@@ -48,7 +48,7 @@
 .goods-item__description {
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 4px;
+  padding-top: 6px;
   padding-bottom: 20px;
   box-sizing: border-box;
   font-size: 13px;
@@ -95,7 +95,7 @@
   }
 }
 
-.goods__cart {
+.goods-item__cart {
   position: absolute;
   right: 0;
   top: 44%;
@@ -110,6 +110,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .goods-item__cart {
+    right: 2px;
+  }
+}
+
+@media (min-width: $tablet-width) {
   .goods-item__image-link {
     flex-shrink: 0;
     padding-bottom: 139px;// Временное правило
@@ -120,6 +126,6 @@
 @media (min-width: $desktop-width) {
   .goods-item__image-link {
     padding-right: 54px;
-    padding-bottom: 266px;
+    padding-bottom: 268px;
   }
 }
