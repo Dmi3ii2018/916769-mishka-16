@@ -7,6 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 143px;
 
     &::before {
       content: "";
@@ -14,7 +15,6 @@
       width: 250px;
       height: 50px;
       margin-right: 20px;
-      background-color: #ececec;
       background-image: url("../img/logo-tablet.svg");
       background-position: left center;
       background-repeat: no-repeat;
@@ -22,16 +22,34 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .page-footer {
+    margin-top: 50px;
+  }
+}
+
 .page-footer__social {
-  @include list-clear;
+  padding-top: 8px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ececec;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__social {
+    margin-top: 8px;
+  }
 }
 
 .page-footer__copyright {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 83px;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer__copyright {
+    justify-content: flex-end;
     width: 250px;
     margin-left: 20px;
   }
@@ -39,7 +57,35 @@
 
 .page-footer__copyright-text {
   @include font-bold;
+  margin-right: 32px;
+  padding-bottom: 11px;
   font-size: 19px;
   line-height: 18px;
   color: #000000;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__copyright-text {
+    padding-bottom: 0;
+    margin-right: 28px;
+  }
+}
+
+.page-footer__copyright-link {
+  fill: #63d1bb;
+
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__copyright-link {
+    padding-top: 13px;
+    padding-bottom: 0;
+  }
 }

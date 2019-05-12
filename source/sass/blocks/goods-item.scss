@@ -1,15 +1,131 @@
+.goods-item {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 31px;
+}
+
+@media (min-width: $tablet-width) {
+  .goods-item {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin-top: 54px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .goods-item {
+    flex-direction: column-reverse;
+    width: 316px;
+  }
+}
+
+.goods-item__image {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .goods-item__title {
+    font-size: 20px;
+  }
+}
+
 .goods-item__description-wrapper {
   padding-left: 28px;
   padding-right: 28px;
+  padding-top: 25px;
+  margin-top: -1px;
+  border: 1px solid #ececec;
+}
+
+@media (min-width: $tablet-width) {
+  .goods-item__description-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
 }
 
 .goods-item__description {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 6px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
   font-size: 13px;
   line-height: 30px;
 }
 
+@media (min-width: $tablet-width) {
+  .goods-item__description {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .goods-item__description {
+    padding-bottom: 15px;
+  }
+}
+
 .goods-item__price {
   @include font-bold;
+  position: relative;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 28px;
   line-height: 24px;
   color: #000000;
+}
+
+@media (min-width: $tablet-width) {
+  .goods-item__price {
+    font-size: 17px;
+    margin-top: auto;
+    margin-left: 4px;
+    border-top: 1px solid #ececec;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .goods-item__price {
+    padding-top: 23px;
+    padding-bottom: 24px;
+    margin-top: auto;
+    margin-left: 0;
+  }
+}
+
+.goods-item__cart {
+  position: absolute;
+  right: 0;
+  top: 44%;
+  transform: translateY(-50%);
+  display: inline-block;
+  width: 20px;
+  height: 19px;
+  opacity: 0.2;
+  font-size: 0;
+  background-image: url("../img/icon-cart.svg");
+  background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .goods-item__cart {
+    right: 2px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .goods-item__image-link {
+    flex-shrink: 0;
+    padding-bottom: 139px;// Временное правило
+    padding-right: 71px;// Временное правило
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .goods-item__image-link {
+    padding-right: 54px;
+    padding-bottom: 268px;
+  }
 }
