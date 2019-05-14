@@ -44,13 +44,14 @@
     background-image: url("../img/hero-tablet@1x.jpg");
     background-position: center;
     height: 746px;
-    padding-top: 156px;
+    padding-top: 152px;
     padding-bottom: 200px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .promo-block__image-wrapper {
+    padding-top: 154px;
     background-image: url("../img/hero-desktop@1x.jpg");
     background-size: cover;
   }

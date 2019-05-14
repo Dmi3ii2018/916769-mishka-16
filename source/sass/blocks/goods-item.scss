@@ -14,8 +14,14 @@
 
 @media (min-width: $desktop-width) {
   .goods-item {
+    flex-grow: 1;
     flex-direction: column-reverse;
     width: 316px;
+    margin-right: 50px;
+
+    &:nth-of-type(3n) {
+      margin-right: 0;
+    }
   }
 }
 
@@ -32,7 +38,7 @@
 .goods-item__description-wrapper {
   padding-left: 28px;
   padding-right: 28px;
-  padding-top: 25px;
+  padding-top: 26px;
   margin-top: -1px;
   border: 1px solid #ececec;
 }
@@ -42,6 +48,16 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    padding-left: 27px;
+    padding-right: 35px;
+    padding-top: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .goods-item__description-wrapper {
+    padding-left: 27px;
+    padding-right: 32px;
   }
 }
 
@@ -58,12 +74,25 @@
 @media (min-width: $tablet-width) {
   .goods-item__description {
     font-size: 15px;
+    padding-top: 5px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .goods-item__description {
     padding-bottom: 15px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .goods-item__description--bin-linens {
+    padding-top: 7px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .goods-item__description--bin-linens {
+    padding-top: 5px;
   }
 }
 
@@ -80,6 +109,7 @@
 @media (min-width: $tablet-width) {
   .goods-item__price {
     font-size: 17px;
+    padding-top: 22px;
     margin-top: auto;
     margin-left: 4px;
     border-top: 1px solid #ececec;
@@ -105,13 +135,32 @@
   height: 19px;
   opacity: 0.2;
   font-size: 0;
-  background-image: url("../img/icon-cart.svg");
-  background-repeat: no-repeat;
+  //background-image: url("../img/icon-cart.svg");
+  //background-repeat: no-repeat;
+
+  &:hover {
+    fill: #63d1bb;
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  & svg {
+    position: absolute;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .goods-item__cart {
-    right: 2px;
+    right: -3px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .goods-item__cart {
+    right: 0;
   }
 }
 
@@ -119,7 +168,7 @@
   .goods-item__image-link {
     flex-shrink: 0;
     padding-bottom: 139px;// Временное правило
-    padding-right: 71px;// Временное правило
+    padding-right: 74px;// Временное правило
   }
 }
 

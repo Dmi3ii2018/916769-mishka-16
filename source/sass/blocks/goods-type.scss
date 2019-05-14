@@ -28,39 +28,44 @@
 }
 
 .goods-type__link {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   color: #ffffff;
-  padding-top: 19px;
-  padding-bottom: 21px;
+  padding-top: 26px;
+  padding-bottom: 29px;
   padding-left: 29px;
   padding-right: 28px;
 
   &:hover {
-    padding-top: 18px;
-    padding-bottom: 28px;
+    padding-top: 21px;
+    padding-bottom: 38px;
   }
 
   &:active {
     opacity: 0.3;
   }
-}
 
-.goods-type__link::after {
-  content: "";
-  display: inline-block;
-  width: 80px;
-  height: 62px;
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 62px 62px;
-  opacity: 0.5;
+  &::after {
+    content: "";
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%) translateY(3px);
+    display: inline-block;
+    width: 80px;
+    height: 62px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 62px 62px;
+    opacity: 0.5;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .goods-type__link {
-    padding-top: 30px;
+    padding-top: 26px;
     padding-bottom: 30px;
     padding-right: 24px;
     padding-left: 36px;
@@ -110,6 +115,8 @@
   }
 
   &::after {
+    transform: translateY(-50%) translateY(-1px);
+    right: 27px;
     background-image: url("../img/icon-toy.svg");
     background-position: right;
   }
