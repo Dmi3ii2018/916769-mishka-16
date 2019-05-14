@@ -1,0 +1,39 @@
+.form__fieldset {
+  border: none;
+}
+
+.form__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.form label {
+  @include font-bold;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.form__name {
+  position: relative;
+
+  @include font-bold;
+  padding-top: 6px;
+  padding-bottom: 9px;
+  margin-left: -14px;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #63d1bb;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -13px;
+    display: inline-block;
+    width: 198px;
+    height: 1px;
+    transform: translateY(-1px);
+    background-color: #63d1bb;
+  }
+}
