@@ -79,7 +79,8 @@
 }
 
 .week-offer__description {
-  line-height: 25px;
+  line-height: 24px;
+  margin-bottom: 18px;
 }
 
 @media (min-width: $tablet-width) {
@@ -133,7 +134,11 @@
 }
 
 .week-offer__field {
-  width: 96px;
+  width: 94px;
+}
+
+.week-offer__value--tiffany {
+  letter-spacing: -0.3px;
 }
 
 @media (min-width: $tablet-width) {
