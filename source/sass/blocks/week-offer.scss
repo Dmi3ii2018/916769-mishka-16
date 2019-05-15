@@ -66,6 +66,7 @@
 @media (min-width: $tablet-width) {
   .week-offer__name {
     margin-top: 0;
+    margin-left: -2px;
   }
 }
 
@@ -78,7 +79,8 @@
 }
 
 .week-offer__description {
-  line-height: 25px;
+  line-height: 24px;
+  margin-bottom: 18px;
 }
 
 @media (min-width: $tablet-width) {
@@ -108,7 +110,7 @@
 
 @media (min-width: $desktop-width) {
   .week-offer__price {
-    margin-top: 104px;
+    margin-top: 106px;
   }
 }
 
@@ -116,8 +118,8 @@
   .week-offer__image {
     position: absolute;
     top: 157px;
-    right: 89px;
-    transform: scale(1.3); // временное правило
+    right: 77px;
+    transform: scale(1.2); // временное правило
   }
 }
 
@@ -125,24 +127,23 @@
   .week-offer__image {
     position: absolute;
     top: 44px;
-    right: 186px;
-    transform: scale(2);//Временное правило
+    right: 175px;
+    transform: scale(1.9);//Временное правило
+    padding-left: 16px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .week-offer__field {
-    padding-left: 3px;
-  }
+.week-offer__field {
+  width: 94px;
 }
 
-.week-offer__value {
-  padding-left: 28px;
+.week-offer__value--tiffany {
+  letter-spacing: -0.3px;
 }
 
 @media (min-width: $tablet-width) {
   .week-offer__value {
-    padding-left: 19px;
+    padding-left: 0;
   }
 }
 
@@ -153,11 +154,12 @@
 }
 
 .week-offer__table {
+  width: 100%;
   border-collapse: collapse;
-  margin-bottom:26px;
+  margin-bottom: 27px;
 
   & td {
-    padding-top: 5px;
+    padding-top: 4px;
     padding-bottom: 5px;
     border-bottom: 1px solid #ececec;
   }
@@ -165,21 +167,20 @@
 
 @media (min-width: $tablet-width) {
   .week-offer__table {
-    width: 260px;
-    margin-top: 34px;
+    width: 100%;
+    margin-top: 35px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .week-offer__table {
-    width: 297px;
-    margin-top: 46px;
+    margin-top: 49px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .week-offer__button {
-    width: 290px;
+    width: 292px;
     margin-top: 31px;
   }
 }

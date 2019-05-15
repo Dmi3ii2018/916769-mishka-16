@@ -5,13 +5,13 @@
 @media (min-width: $tablet-width) {
   .feedback {
     position: relative;
-    min-height: 457px;
     box-sizing: border-box;
     flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     padding-top: 78px;
+    padding-bottom: 45px;
     margin-top: 27px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
@@ -22,7 +22,7 @@
 
 @media (min-width: $desktop-width) {
   .feedback {
-    margin-top: 31px;
+    margin-top: 33px;
     padding-left: 226px;
     padding-top: 71px;
     background-position: $desktop-indent top;
@@ -32,6 +32,8 @@
 @media (min-width: $tablet-width) {
   .feedback__title {
     order: -2;
+    margin-left: -4px;
+    padding-bottom: 49px;
   }
 }
 
@@ -40,6 +42,9 @@
     order: -1;
     width: 175px;
     height: 52px;
+    font-size: 17px;
+    padding-top: 16px;
+    padding-left: 7px;
   }
 }
 
@@ -50,7 +55,12 @@
 }
 
 .feedback__item {
+  display: none;
   margin: 0;
+}
+
+.feedback__item--active {
+  display: block;
 }
 
 .feedback__text {
@@ -63,20 +73,20 @@
   .feedback__text {
     width: 645px;
     font-size: 17px;
-    margin-top: -5px;
-    margin-bottom: 53px;
+    margin-top: 0;
+    margin-bottom: 54px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .feedback__text {
     width: 770px;
-    margin-top: -47px;
     margin-bottom: 35px;
   }
 }
 
 .feedback__writer {
+  font-style: normal;
   font-size: 17px;
 }
 
@@ -87,10 +97,21 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .feedback__writer {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback__writer {
+    font-size: 17px;
+  }
+}
+
 .feedback__writer-name {
   @include font-bold;
   line-height: 30px;
-  font-style: normal;
   color: #000000;
 }
 
@@ -99,7 +120,6 @@
     font-size: 18px;
   }
 }
-
 
 .feedback__button-wrapper {
   margin-top: 29px;
@@ -110,7 +130,7 @@
   .feedback__button-wrapper {
     position: absolute;
     right: 53px;
-    bottom: 51px;
+    bottom: 48px;
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -124,7 +144,7 @@
 }
 
 .feedback__button {
-  width: 129px;
+  width: 130px;
   height: 52px;
   font-size: 0;
   background-color: #ffffff;
@@ -151,7 +171,7 @@
 }
 
 .feedback__button--right {
-  margin-left: -3px;
+  margin-left: -4px;
   background-image: url("../img/icon-right-arrow.svg");
   border-left: none;
 }

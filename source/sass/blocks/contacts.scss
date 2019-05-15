@@ -8,12 +8,10 @@
     display: block;
     height: 8px;
     background-image: url("../img/bg-zigzag-line.svg");
-    background-repeat: no-repeat;
-    background-size: 338px 8px;
-    background-position: center;
-    margin-right: -$mobile-indent;
-    margin-left: -$mobile-indent;
-    margin-bottom: 37px;
+    background-repeat: repeat-x;
+    background-size: 319px 8px;
+    background-position: 10px;
+    margin-bottom: 36px;
   }
 }
 
@@ -33,7 +31,7 @@
       height: 16px;
       margin-left: 0;
       margin-right: 0;
-      margin-bottom: 60px;
+      margin-bottom: 62px;
       background-position: -20px;
       background-size: 771px 16px;
       background-repeat: repeat-x;
@@ -42,7 +40,7 @@
     &::after {
       content: "";
       position: absolute;
-      top: 60px;
+      top: 63px;
       right: 53px;
       display: inline-block;
       width: 47px;
@@ -66,8 +64,9 @@
       flex-grow: 1;
       height: 23px;
       margin-bottom: 55px;
-      background-size: 100%;
+      background-size: 1052px 23px;
       background-repeat: repeat-x;
+      background-position: -26px;
     }
 
     &::after {
@@ -80,6 +79,7 @@
 @media (min-width: $tablet-width) {
   .contacts__title {
     width: 100%;
+    margin-left: -4px;
   }
 }
 
@@ -96,10 +96,20 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .contacts__field {
+    margin-top: 49px;
+  }
+}
+
+.contacts__field--address {
+  margin-top: 30px;
+}
+
 @media (min-width: $tablet-width) {
   .contacts__field--address {
     width: 305px;
-    margin-left: 54px;
+    margin-left: 53px;
     margin-top: 14px;
   }
 }
@@ -116,7 +126,7 @@
 
 @media (min-width: $tablet-width) {
   .contacts__value {
-    margin-left: 22px;
+    margin-left: 24px;
 
     & br:not(:first-of-type) {
       display: none;
@@ -131,6 +141,7 @@
 }
 
 .contacts__email-address {
+  padding-bottom: 4px;
   border-bottom: 1px solid #63d1bb;
 
   &:hover {
@@ -213,7 +224,7 @@
   margin: 0 auto;
   width: 260px;
   box-sizing: border-box;
-  margin-top: 32px;
+  margin-top: 31px;
 }
 
 @media (min-width: $tablet-width) {
