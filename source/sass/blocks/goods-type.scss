@@ -13,10 +13,11 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .goods-type {
     padding-left: $desktop-indent;
     padding-right: $desktop-indent;
+    margin-top: -119px;
   }
 }
 
@@ -26,30 +27,107 @@
   font-size: 19px;
 }
 
+.goods-type__link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+  padding-top: 26px;
+  padding-bottom: 29px;
+  padding-left: 29px;
+  padding-right: 28px;
+
+  &:hover {
+    padding-top: 21px;
+    padding-bottom: 38px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%) translateY(3px);
+    display: inline-block;
+    width: 80px;
+    height: 62px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 62px 62px;
+    opacity: 0.5;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .goods-type__link {
+    padding-top: 26px;
+    padding-bottom: 30px;
+    padding-right: 24px;
+    padding-left: 36px;
+
+    &:hover {
+      padding-top: 20px;
+      padding-bottom: 37px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .goods-type__link {
+    padding-top: 27px;
+    padding-left: 37px;
+    padding-right: 25px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .goods-type__item {
     flex-grow: 1;
   }
 }
 
-.goods-type__item--interier {
+.goods-type__item--interior {
   background-color: #63d1bb;
+}
+
+.goods-type__item--interior a {
+  &:hover {
+    background-color: #59d5bc;
+  }
+
+  &::after {
+    background-image: url("../img/icon-interior.svg");
+  }
 }
 
 .goods-type__item--toys {
   background-color: #56c3b2;
 }
 
-.goods-type__link {
-  display: inline-block;
-  vertical-align: middle;
-  box-sizing: border-box;
-  width: 100%;
-  color: #ffffff;
-  padding-top: 27px;
-  padding-bottom: 27px;
-  padding-left: 30px;
-  padding-right: 30px;
+.goods-type__item--toys a {
+  &:hover {
+    background-color: #46c1ae;
+  }
+
+  &::after {
+    transform: translateY(-50%) translateY(-1px);
+    right: 27px;
+    background-image: url("../img/icon-toy.svg");
+    background-position: right;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .goods-type__item--toys a {
+    &::after {
+      background-position: center;
+    }
+  }
 }
 
 .goods-type__name {
@@ -57,4 +135,11 @@
   vertical-align: middle;
   width: 150px;
   line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .goods-type__name {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

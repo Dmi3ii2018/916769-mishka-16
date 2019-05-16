@@ -1,12 +1,12 @@
 .button {
   @include font-bold;
   display: block;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 9px;
+  padding-right: 9px;
   box-sizing: border-box;
-  font-size: 17px;
+  font-size: 18px;
   color: #444444;
   line-height: 20px;
   text-align: center;
@@ -22,5 +22,11 @@
   &:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: #444444;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    font-size: 17px;
   }
 }

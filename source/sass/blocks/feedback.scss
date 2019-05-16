@@ -1,47 +1,184 @@
+.feedback {
+  margin-top: 55px;
+}
+
 @media (min-width: $tablet-width) {
   .feedback {
     position: relative;
+    box-sizing: border-box;
     flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 122px;
-    padding-top: 86px;
-    margin-top: 80px;
+    align-items: flex-start;
+    padding-top: 78px;
+    padding-bottom: 45px;
+    margin-top: 27px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 350px 457px;
+    background-position: left top;
   }
 }
 
 @media (min-width: $desktop-width) {
   .feedback {
-    padding-left: 175px;
+    margin-top: 33px;
+    padding-left: 226px;
+    padding-top: 71px;
+    padding-bottom: 95px;
+    background-position: $desktop-indent top;
   }
 }
 
 @media (min-width: $tablet-width) {
   .feedback__title {
     order: -2;
+    margin-left: -4px;
+    padding-bottom: 49px;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .feedback__button {
+  .feedback__button-write {
     order: -1;
+    width: 175px;
+    height: 52px;
+    font-size: 17px;
+    padding-top: 16px;
+    padding-left: 7px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback__button-write {
+    margin-top: 9px;
   }
 }
 
 .feedback__item {
+  display: none;
   margin: 0;
+}
+
+.feedback__item--active {
+  display: block;
 }
 
 .feedback__text {
   line-height: 30px;
-  margin-top: 35px;
-  margin-bottom: 35px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__text {
+    width: 645px;
+    font-size: 17px;
+    margin-top: 0;
+    margin-bottom: 54px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback__text {
+    width: 770px;
+    margin-bottom: 37px;
+  }
+}
+
+.feedback__writer {
+  font-style: normal;
+  font-size: 17px;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__writer {
+    display: inline-block;
+    max-width: 300px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__writer {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback__writer {
+    font-size: 17px;
+  }
 }
 
 .feedback__writer-name {
   @include font-bold;
   line-height: 30px;
-  font-style: normal;
-  font-size: 17px;
   color: #000000;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__writer-name {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback__writer-name {
+    font-size: 17px;
+  }
+}
+
+.feedback__button-wrapper {
+  margin-top: 29px;
+  margin-bottom: 36px;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__button-wrapper {
+    position: absolute;
+    right: 53px;
+    bottom: 48px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .feedback__button-wrapper {
+    bottom: 97px;
+  }
+}
+
+.feedback__button {
+  width: 130px;
+  height: 52px;
+  font-size: 0;
+  background-color: #ffffff;
+  padding: 0;
+  border: 1px solid #ececec;
+  background-repeat: no-repeat;
+  background-size: 50px 26px;
+  background-position: center;
+
+  &:hover {
+    @include hover-active;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__button {
+    width: 84px;
+    border: none;
+  }
+}
+
+.feedback__button--left {
+  background-image: url("../img/icon-left-arrow.svg");
+}
+
+.feedback__button--right {
+  margin-left: -4px;
+  background-image: url("../img/icon-right-arrow.svg");
+  border-left: none;
 }
