@@ -14,7 +14,8 @@
   <div class="main-wrapper">
     <header class="page-header">
       <nav class="main-nav">
-        <a class="main-nav__logo-link">
+        <a class="main-nav__logo-link"
+          href="/">
           <img class="logo main-nav__logo"
             src="img/logo-mobile.svg"
             width="86"
@@ -92,7 +93,7 @@
       </nav>
     </header>
     <main class="page-main">
-      <section class="order-form">
+      <section class="order-form center-wrapper">
         <h1 class="order-form__title title">Вязание на заказ</h1>
         <p class="order-form__description">
           Мы будем рады воплотить в жизнь ваши пожелания!
@@ -102,81 +103,84 @@
         <form class="form order-form__form"
           method="get"
           action="https://echo.htmlacademy.ru">
-          <fieldset class="form__fieldset type-form">
-            <legend class="fieldset-legend type-form__legend">Тип</legend>
-            <ul class="form-list type-form__list">
-              <li class="form-list__item type-option">
-                <input class="form-input type-option__input"
-                  type="radio"
-                  name="product-type"
-                  value="interier"
-                  id="interier"
-                  checked>
-                <label class="form-label type-option__label"
-                  for="interier">Аксессуары для интерьера</label>
-              </li>
-              <li class="form-list__item type-option">
-                <input class="form-input type-option__input"
-                  type="radio"
-                  name="product-type"
-                  value="kids-toys"
-                  id="kids-toys">
-                <label class="form-label type-option__label"
-                  for="kids-toys">Детская игрушка</label>
-              </li>
-            </ul>
+          <fieldset class="form__fieldset radio-form">
+            <legend class="fieldset-legend radio-form__legend visually-hidden">Тип</legend>
+            <div class="form__wrapper">
+              <span class="form__name">Тип</span>
+              <ul class="form-list radio-form__list">
+                <li class="form-list__item radio-form__option">
+                  <input class="form-input radio-form__input"
+                    type="radio"
+                    name="product-type"
+                    value="interier"
+                    id="interier"
+                    checked>
+                  <label class="form-label radio-form__label"
+                    for="interier">Аксессуар для интерьера</label>
+                </li>
+                <li class="form-list__item radio-form__option">
+                  <input class="form-input radio-form__input"
+                    type="radio"
+                    name="product-type"
+                    value="kids-toys"
+                    id="kids-toys">
+                  <label class="form-label radio-form__label"
+                    for="kids-toys">Детская игрушка</label>
+                </li>
+              </ul>
+            </div>
           </fieldset>
-          <fieldset class="form__fieldset color-form">
-            <legend class="fieldset-legend color-form__legend">Цвет</legend>
-            <ul class="form-list color-form__list">
-              <li class="color-option form-list__item">
-                <input class="form-input color-option__input"
+          <fieldset class="form__fieldset checkbox-form">
+            <legend class="fieldset-legend checkbox-form__legend">Цвет</legend>
+            <ul class="form-list checkbox-form__list">
+              <li class="checkbox-option form-list__item">
+                <input class="form-input checkbox-option__input"
                   type="checkbox"
                   name="white"
                   id="form-white"
                   checked>
-                <label class="form-label color-option__label"
+                <label class="form-label checkbox-option__label"
                   for="form-white">Белый</label>
               </li>
-              <li class="color-option form-list__item">
-                <input class="form-input color-option__input"
+              <li class="checkbox-option form-list__item">
+                <input class="form-input checkbox-option__input"
                   type="checkbox"
                   name="gray"
                   id="form-gray"
                   checked>
-                <label class="form-label color-option__label"
+                <label class="form-label checkbox-option__label"
                   for="form-gray">Серый</label>
               </li>
-              <li class="color-option form-list__item">
-                <input class="form-input color-option__input"
+              <li class="checkbox-option form-list__item">
+                <input class="form-input checkbox-option__input"
                   type="checkbox"
                   name="tiffany"
                   id="form-tiffany">
-                <label class="form-label color-option__label"
+                <label class="form-label checkbox-option__label"
                   for="form-tiffany">Тиффани</label>
               </li>
-              <li class="color-option form-list__item">
-                <input class="form-input color-option__input"
+              <li class="checkbox-option form-list__item">
+                <input class="form-input checkbox-option__input"
                   type="checkbox"
                   name="black"
                   id="form-black">
-                <label class="form-label color-option__label"
+                <label class="form-label checkbox-option__label"
                   for="form-black">Черный</label>
               </li>
-              <li class="color-option form-list__item">
-                <input class="form-input color-option__input"
+              <li class="checkbox-option form-list__item">
+                <input class="form-input checkbox-option__input"
                   type="checkbox"
                   name="pink"
                   id="form-pink">
-                <label class="form-label color-option__label"
+                <label class="form-label checkbox-option__label"
                   for="form-pink">Розовый</label>
               </li>
-              <li class="color-option form-list__item">
-                <input class="form-input color-option__input"
+              <li class="checkbox-option form-list__item">
+                <input class="form-input checkbox-option__input"
                   type="checkbox"
                   name="orange"
                   id="form-orange">
-                <label class="form-label color-option__label"
+                <label class="form-label checkbox-option__label"
                   for="form-orange">Оранжевый</label>
               </li>
             </ul>
@@ -339,5 +343,5 @@
           <span class="visually-hidden">HTML Academy</span></a>
       </div>
     </footer>
-    </div>
+  </div>
 </body>
