@@ -121,6 +121,7 @@
   .fabrication__video-wrapper {
     position: absolute;
     left: 50px;
+    top: 0;
     width: auto;
     padding-right: 421px;
   }
@@ -167,7 +168,7 @@
     padding-bottom: 24px;
 
     &::before {
-      top: 45px;
+      top: 42px;
       left: 0;
       transform: none;
     }

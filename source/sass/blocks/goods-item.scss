@@ -96,6 +96,10 @@
   }
 }
 
+.goods-item__link:hover {
+  @include hover-active;
+}
+
 .goods-item__price {
   @include font-bold;
   position: relative;
