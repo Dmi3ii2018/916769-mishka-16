@@ -82,3 +82,74 @@
   font-size: 17px;
   background-color: transparent;
 }
+
+@media (min-width: $tablet-width) {
+  .form {
+    & fieldset {
+      margin-top: 68px;
+
+      &:not(:first-of-type) {
+        padding-top: 45px;
+      }
+
+      &:nth-of-type(n+4) {
+        margin-top: 35px;
+        padding-top: 60px;
+
+        & input,
+        textarea {
+          position: absolute;
+          right: 0;
+          width: 502px;
+        }
+      }
+
+      &:nth-of-type(4) {
+        & input {
+          bottom: -10px;
+        }
+      }
+
+      &:nth-of-type(5) {
+        padding-top: 11px;
+
+        & input {
+          bottom: -10px;
+        }
+      }
+
+      & input {
+        flex-grow: 1;
+        margin-left: 25px;
+        font-size: 19px;
+        line-height: 19px;
+      }
+
+      &::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    }
+
+    & legend {
+      float: left;
+    }
+
+    & label {
+      width: auto;
+      font-size: 19px;
+      line-height: 18px;
+
+      & br {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form__list {
+    padding-left: 169px;
+  }
+}

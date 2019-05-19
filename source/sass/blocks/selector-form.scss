@@ -2,8 +2,21 @@
   padding-top: 12px;
 }
 
+@media (min-width: $tablet-width) {
+  .selector-form__list {
+    padding-top: 0;
+  }
+}
+
 .selector-form__option {
   padding-top: 13px;
+}
+
+@media (min-width: $tablet-width) {
+  .selector-form__option {
+    padding-top: 0;
+    padding-bottom: 46px;
+  }
 }
 
 .selector-form__label {
@@ -79,6 +92,34 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .selector-form__list--checkbox {
+    padding-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 124px;
+
+    & li {
+      padding-top: 0;
+      width: 239px;
+      padding-bottom: 46px;
+    }
+  }
+}
+
 .selector__input:checked + .selector-form__label::after {
   display: inline-block;
+}
+
+@media (min-width: $tablet-width) {
+  .selector-form__label {
+    padding-left: 80px;
+    padding-top: 5px;
+
+    &::before {
+      width: 52px;
+      height: 53px;
+    }
+  }
 }

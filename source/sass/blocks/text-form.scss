@@ -2,9 +2,24 @@
   padding-top: 15px;
 }
 
+@media (min-width: $tablet-width) {
+  .text-form__list {
+    padding-top: 0;
+    margin-top: -1px;
+  }
+}
+
 .text-form__item {
   &:not(:first-of-type) {
     margin-top: 17px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .text-form__item {
+    display: flex;
+    align-items: baseline;
+    padding-bottom: 14px;
   }
 }
 
@@ -27,6 +42,12 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .text-form--additions {
+    position: relative;
+  }
+}
+
 .text-form--phone,
 .text-form--email {
   position: relative;
@@ -39,9 +60,28 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .text-form--phone,
+  .text-form--email {
+    svg {
+      right: 23px;
+      bottom: -2px;
+    }
+  }
+}
+
 .text-form--phone {
   & svg {
     right: 8px;
     bottom: 18px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .text-form--phone {
+    & svg {
+      right: 26px;
+      bottom: 6px;
+    }
   }
 }
