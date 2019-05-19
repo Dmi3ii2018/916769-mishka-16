@@ -1,8 +1,6 @@
 .form {
   margin-top: 19px;
-}
 
-.form {
   & fieldset {
     padding: 0;
     margin: 0;
@@ -19,49 +17,39 @@
         margin-top: -1px;
       }
     }
-  }
-}
 
-.form {
+    & input {
+      width: 100%;
+      height: 52px;
+      margin-top: -7px;
+      font-size: 17px;
+      border: none;
+      border-bottom: 2px solid #444444;
+      box-sizing: border-box;
+
+      &:hover {
+        border-bottom: 2px solid #62d1ba;
+
+        & + svg {
+          fill: #62d1ba;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
   & legend {
     @include font-bold;
     font-size: 17px;
     color: #63d1bb;
     text-transform: uppercase;
   }
-}
 
-.form__list {
-  @include list-clear;
-}
-
-.form input[type="radio"],
-.form input[type="checkbox"] {
-  display: none;
-}
-
-.form {
-  & input {
-    width: 100%;
-    height: 52px;
-    margin-top: -7px;
-    font-size: 17px;
-    border: none;
-    border-bottom: 2px solid #444444;
-    box-sizing: border-box;
-
-    &:hover {
-      border-bottom: 2px solid #62d1ba;
-
-      & + svg {
-        fill: #62d1ba;
-        opacity: 1;
-      }
-    }
+  & input[type="radio"],
+  input[type="checkbox"] {
+    display: none;
   }
-}
 
-.form {
   & label {
     @include font-bold;
     display: inline-block;
@@ -71,6 +59,14 @@
     color: #000000;
     line-height: 18px;
   }
+
+  & input::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.form__list {
+  @include list-clear;
 }
 
 .form-explanation {
@@ -85,10 +81,4 @@
   width: 100%;
   font-size: 17px;
   background-color: transparent;
-}
-
-.form {
-  & input::placeholder {
-   color: rgba(0, 0, 0, 0.3);
-  }
 }
