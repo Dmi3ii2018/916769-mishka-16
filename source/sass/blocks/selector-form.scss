@@ -135,6 +135,23 @@
   }
 }
 
+.selector-form__input {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .selector-form--checkbox {
+    padding-top: 59px;
+    margin-left: -50px;
+    margin-right: -50px;
+    padding-bottom: 18px;
+    margin-top: 16px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #f1f1f1;
+  }
+}
+
 .selector-form__input:checked + .selector-form__label::after {
   display: inline-block;
 }

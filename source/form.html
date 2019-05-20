@@ -30,7 +30,7 @@
               <span class="site-list__text">Каталог товаров</span>
             </a>
           </li>
-          <li class="site-list__item site-list__item">
+          <li class="site-list__item">
             <a class="site-list__link"
               href="form.html">
               <span class="site-list__text">Вязание на заказ</span>
@@ -105,7 +105,7 @@
           <fieldset class="form__fieldset selector-form">
             <legend>Тип</legend>
             <ul class="form__list selector-form__list">
-              <li class="form__list--item selector-form__option">
+              <li class="form__list-item selector-form__option">
                 <input class="selector-form__input"
                   type="radio"
                   name="product-type"
@@ -113,9 +113,9 @@
                   id="interier"
                   checked>
                 <label class="form-label selector-form__label"
-                  for="interier">Аксессуар для <br> интерьера</label>
+                  for="interier">Аксессуар для интерьера</label>
               </li>
-              <li class="form__list--item selector-form__option">
+              <li class="form__list-item selector-form__option">
                 <input class="selector-form__input"
                   type="radio"
                   name="product-type"
@@ -129,7 +129,7 @@
           <fieldset class="form__fieldset selector-form selector-form--checkbox">
             <legend class="fieldset-legend selector-form__legend">Цвет</legend>
             <ul class="form__list selector-form__list selector-form__list--checkbox">
-              <li class="selector-form__option form__list--item">
+              <li class="selector-form__option form__list-item">
                 <input class="selector-form__input"
                   type="checkbox"
                   name="white"
@@ -138,7 +138,7 @@
                 <label class="form-label selector-form__label"
                   for="form-white">Белый</label>
               </li>
-              <li class="selector-form__option form__list--item">
+              <li class="selector-form__option form__list-item">
                 <input class="selector-form__input"
                   type="checkbox"
                   name="gray"
@@ -147,7 +147,7 @@
                 <label class="form-label selector-form__label"
                   for="form-gray">Серый</label>
               </li>
-              <li class="selector-form__option form__list--item">
+              <li class="selector-form__option form__list-item">
                 <input class="selector-form__input"
                   type="checkbox"
                   name="tiffany"
@@ -155,7 +155,7 @@
                 <label class="form-label selector-form__label"
                   for="form-tiffany">«Тиффани»</label>
               </li>
-              <li class="selector-form__option form__list--item">
+              <li class="selector-form__option form__list-item">
                 <input class="selector-form__input"
                   type="checkbox"
                   name="black"
@@ -163,7 +163,7 @@
                 <label class="form-label selector-form__label"
                   for="form-black">Черный</label>
               </li>
-              <li class="selector-form__option form__list--item">
+              <li class="selector-form__option form__list-item">
                 <input class="selector-form__input"
                   type="checkbox"
                   name="pink"
@@ -171,7 +171,7 @@
                 <label class="form-label selector-form__label"
                   for="form-pink">Розовый</label>
               </li>
-              <li class="selector-form__option form__list--item">
+              <li class="selector-form__option form__list-item">
                 <input class="selector-form__input"
                   type="checkbox"
                   name="orange"
@@ -185,8 +185,9 @@
             <legend class="fieldset-legend text-form__legend">ФИО</legend>
             <ul class="form__list text-form__list">
               <li class="text-form__item">
-                <label for="name">Имя:</label>
-                <input class="text-form__input"
+                <label class="form-label"
+                  for="name">Имя:</label>
+                <input class="text-input"
                   type="text"
                   name="name"
                   placeholder="Введите ваше имя*"
@@ -194,8 +195,9 @@
                   required>
               </li>
               <li class="text-form__item">
-                <label for="second-name">Фамилия:</label>
-                <input class="text-form__input"
+                <label class="form-label"
+                  for="second-name">Фамилия:</label>
+                <input class="text-input"
                   type="text"
                   name="second-name"
                   placeholder="Укажите фамилию*"
@@ -203,8 +205,9 @@
                   required>
               </li>
               <li class="text-form__item">
-                <label for="middle-name">Отчество:</label>
-                <input class="text-form__input"
+                <label class="form-label"
+                  for="middle-name">Отчество:</label>
+                <input class="text-input"
                   type="text"
                   name="middle-name"
                   placeholder="Отчество, если желаете"
