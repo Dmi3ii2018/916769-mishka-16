@@ -25,6 +25,7 @@
 
 .text-form--additions {
   & textarea {
+    resize: none;
     width: 100%;
     box-sizing: border-box;
     font-size: 18px;
@@ -39,12 +40,20 @@
     &:hover {
       border: 2px solid #62d1ba;
     }
+
+    &:focus {
+      color: #444444;
+    }
   }
 }
 
 @media (min-width: $tablet-width) {
   .text-form--additions {
-    position: relative;
+    padding-top: 0;
+
+    & legend {
+      padding-top: 26px;
+    }
   }
 }
 
@@ -63,25 +72,63 @@
 @media (min-width: $tablet-width) {
   .text-form--phone,
   .text-form--email {
+    margin-left: -50px;
+    margin-right: -50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #f1f1f1;
+
     svg {
-      right: 23px;
-      bottom: -2px;
+      right: 73px;
+      bottom: 58px;
     }
   }
 }
 
 .text-form--phone {
   & svg {
-    right: 8px;
-    bottom: 18px;
+    right: 76px;
+    bottom: 5px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .text-form--phone {
-    & svg {
-      right: 26px;
-      bottom: 6px;
+    margin-left: -50px;
+    margin-right: -50px;
+  }
+
+  input {
+    bottom: -12px;
+    right: 50px;
+    z-index: 3;
+    padding-left: 16px;
+  }
+
+  & svg {
+    right: 77px;
+    bottom: 6px;
+    z-index: 5;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .text-form--email {
+    padding-right: 50px;
+    background-color: #f1f1f1;
+    margin-top: 0;
+    padding-top: 46px;
+    margin-left: -50px;
+    margin-right: -50px;
+    padding-left: 50px;
+    padding-bottom: 62px;
+
+    input {
+      bottom: 50px;
+      right: 50px;
+      padding-left: 18px;
+      background-color: #f1f1f1;
     }
   }
 }
