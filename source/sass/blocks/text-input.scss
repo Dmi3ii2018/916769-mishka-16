@@ -28,3 +28,9 @@
     outline: none;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .text-input {
+    padding-left: 18px;
+  }
+}

@@ -4,7 +4,7 @@
 
 @media (min-width: $tablet-width) {
   .text-form__list {
-    padding-top: 0;
+    padding-top: 8px;
     margin-top: -1px;
   }
 }
@@ -23,9 +23,14 @@
   }
 }
 
+.text-form--additions {
+  padding-top: 10px;
+  padding-bottom: 0;
+}
+
 @media (min-width: $tablet-width) {
   .text-form--additions {
-    padding-top: 0;
+    padding-top: 34px;
 
     & legend {
       padding-top: 26px;
@@ -33,14 +38,36 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .text-form__list--name {
+    li {
+      &:last-of-type {
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .text-form__list--name {
+    padding-right: 175px;
+  }
+}
+
 .text-form--phone,
 .text-form--email {
   position: relative;
+  padding-top: 8px;
+  padding-bottom: 17px;
+
+  & legend {
+    padding-bottom: 6px;
+  }
 
   & svg {
     position: absolute;
     right: 4px;
-    bottom: 10px;
+    bottom: 25px;
     opacity: 0.2;
   }
 }
@@ -52,39 +79,44 @@
     margin-right: -50px;
     padding-left: 50px;
     padding-right: 50px;
+    padding-top: 57px;
+    padding-bottom: 50px;
     background-color: #f1f1f1;
 
     svg {
       right: 73px;
-      bottom: 58px;
+      bottom: 59px;
+    }
+
+    & legend {
+      padding-bottom: 6px;
+      padding-top: 2px;
     }
   }
 }
 
 .text-form--phone {
   & svg {
-    right: 76px;
-    bottom: 5px;
+    right: 8px;
+    bottom: 34px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .text-form--phone {
+    padding-bottom: 0;
     margin-left: -50px;
     margin-right: -50px;
-  }
 
-  input {
-    bottom: -12px;
-    right: 50px;
-    z-index: 3;
-    padding-left: 16px;
-  }
+    & svg {
+      right: 77px;
+      bottom: 19px;
+      z-index: 5;
+    }
 
-  & svg {
-    right: 77px;
-    bottom: 6px;
-    z-index: 5;
+    & input {
+      padding-left: 18px;
+    }
   }
 }
 
@@ -94,16 +126,60 @@
     padding-right: 50px;
     background-color: #f1f1f1;
     margin-top: 0;
-    padding-top: 46px;
+    padding-top: 30px;
     margin-left: -50px;
     margin-right: -50px;
     padding-left: 50px;
-    padding-bottom: 62px;
+    padding-bottom: 50px;
 
     input {
       bottom: 50px;
       right: 50px;
       padding-left: 18px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .text-form--phone,
+  .text-form--email {
+    padding-left: 113px;
+    padding-right: 226px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .text-form--phone {
+    & svg {
+      right: 233px;
+      bottom: 17px;
+    }
+
+    & input {
+      width: 700px;
+    }
+
+    & legend {
+      width: 113px;
+      padding-top: 5px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .text-form--email {
+    & svg {
+      right: 229px;
+      bottom: 59px;
+    }
+
+    & input {
+      width: 700px;
+    }
+
+    & legend {
+      width: 113px;
+      padding-top: 5px;
     }
   }
 }

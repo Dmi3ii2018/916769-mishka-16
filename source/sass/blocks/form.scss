@@ -1,8 +1,9 @@
 .form {
-  margin-top: 19px;
+  margin-top: 18px;
 
   & legend {
     @include font-bold;
+    float: left;
     font-size: 17px;
     color: #63d1bb;
     text-transform: uppercase;
@@ -10,20 +11,12 @@
 }
 
 .form__fieldset {
-  padding-top: 17px;
-  padding-bottom: 17px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   padding-left: 0;
   padding-right: 0;
   margin: 0;
   border: none;
-
-  //&:not(:first-of-type) {
-    //margin-top: 31px;
-  //}
-
-  //&:nth-of-type(n+4) {
-    //margin-top: 26px;
-  //}
 
   &::after {
     content: "";
@@ -39,8 +32,10 @@
   }
 }
 
-.form__list {
-  @include list-clear;
+@media (min-width: $desktop-width) {
+  .form__fieldset {
+    padding-left: 65px;
+  }
 }
 
 .form__explanation {
@@ -56,14 +51,15 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .form__explanation {
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .form__fieldset {
-    // margin-top: 68px;
-
-    // &:not(:first-of-type) {
-    //   padding-top: 27px;
-    // }
-
     &:nth-of-type(4) {
       & input {
         bottom: -12px;
@@ -72,27 +68,17 @@
     }
 
     &:nth-of-type(n+4) {
-      // margin-top: 35px;
-      // padding-top: 60px;
-
       & input {
         width: 501px;
       }
     }
 
     &:nth-of-type(5) {
-      // padding-top: 46px;
-      // margin-top: 0;
-
       & input {
         bottom: 50px;
         right: 50px;
       }
     }
-
-    // &:nth-of-type(6) {
-    //   padding-top: 0;
-    // }
 
     & input {
       flex-grow: 1;
@@ -102,9 +88,19 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .form__fieldset {
+    &:nth-of-type(n+4) {
+      & input {
+        width: 700px;
+      }
+    }
+  }
+}
+
 .form__button {
   margin-top: 31px;
-  margin-bottom: 53px;
+  margin-bottom: 55px;
   width: 100%;
   font-size: 17px;
   background-color: transparent;
@@ -121,6 +117,14 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .form__submit {
+    padding-left: 176px;
+    padding-right: 174px;
+    margin-bottom: 42px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .form__button {
     width: 230px;
@@ -131,16 +135,17 @@
 
 @media (min-width: $tablet-width) {
   .form {
-
     & legend {
-      float: left;
+      padding-top: 9px;
       width: 169px;
     }
   }
 }
 
-@media (min-width: $tablet-width) {
-  .form__list {
-    padding-left: 169px;
+@media (min-width: $desktop-width) {
+  .form {
+    & legend {
+      width: 100px;
+    }
   }
 }

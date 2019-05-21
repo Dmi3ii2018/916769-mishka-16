@@ -35,6 +35,18 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .order-form__title {
+    font-size: 53px;
+    line-height: 57px;
+    padding-bottom: 104px;
+
+    &::after {
+      bottom: -9px;
+    }
+  }
+}
+
 .order-form__description {
   margin-top: 23px;
   font-size: 13px;
@@ -46,5 +58,13 @@
     font-size: 17px;
     line-height: 30px;
     margin-top: 74px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-form__description {
+    margin-top: 122px;
+    padding-left: 176px;
+    padding-right: 150px;
   }
 }

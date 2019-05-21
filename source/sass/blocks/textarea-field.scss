@@ -7,7 +7,7 @@
   margin-top: 16px;
   border: 2px solid #444444;
   padding-left: 15px;
-  padding-bottom: 5px;
+  padding-bottom: 25px;
   padding-right: 15px;
   color: rgba(0, 0, 0, 0.3);
   border-radius: 0;
@@ -17,13 +17,13 @@
   }
 
   &:hover {
-    border-color:#62d1ba;
+    border-color: #62d1ba;
   }
 
   &:focus {
     color: #444444;
     outline: none;
-    border-color:#62d1ba;
+    border-color: #62d1ba;
   }
 }
 
@@ -32,5 +32,12 @@
     width: 501px;
     font-size: 20px;
     padding-bottom: 9px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .textarea-field {
+    width: 700px;
+    margin-left: 11px;
   }
 }

@@ -102,9 +102,9 @@
         <form class="form"
           method="get"
           action="https://echo.htmlacademy.ru">
-          <fieldset class="form__fieldset selector-form">
+          <fieldset class="form__fieldset selector-form selector-form--type">
             <legend>Тип</legend>
-            <ul class="form__list selector-form__list">
+            <ul class="form__list selector-form__list selector-form__list--type">
               <li class="form__list-item selector-form__option">
                 <input class="selector-form__input"
                   type="radio"
@@ -183,7 +183,7 @@
           </fieldset>
           <fieldset class="form__fieldset text-form">
             <legend class="fieldset-legend text-form__legend">ФИО</legend>
-            <ul class="form__list text-form__list">
+            <ul class="form__list text-form__list text-form__list--name">
               <li class="text-form__item">
                 <label class="form-label"
                   for="name">Имя:</label>
@@ -217,7 +217,7 @@
           </fieldset>
           <fieldset class="form__fieldset text-form text-form--phone">
             <legend class="fieldset-legend">Тел</legend>
-            <input class="text-input"
+            <input class="text-input "
               type="text"
               name="phone-number"
               placeholder="+7 XXX XXX XX XX*"
