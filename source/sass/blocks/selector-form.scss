@@ -2,12 +2,12 @@
   padding-top: 12px;
 }
 
-.selector-form--type {
+.selector-form--radio {
   padding-top: 0;
 }
 
 @media (min-width: $tablet-width) {
-  .selector-form--type {
+  .selector-form--radio {
     padding-top: 51px;
 
     & legend {
@@ -16,19 +16,9 @@
   }
 }
 
-.selector-form__list--type {
-  padding-top: 12px;
-}
-
 @media (min-width: $tablet-width) {
-  .selector-form__list--type {
+  .selector-form__list--radio {
     padding-bottom: 13px;
-
-    & li {
-      &:last-of-type {
-        padding-bottom: 0;
-      }
-    }
   }
 }
 
@@ -40,6 +30,10 @@
 
 .selector-form__option {
   padding-top: 13px;
+
+  &:last-of-type {
+    padding-bottom: 0;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -104,39 +98,40 @@
   }
 }
 
-.selector-form__list--checkbox {
-  padding-top: 12px;
+.selector-form__label--checkbox {
+  &::before {
+    border-radius: 0;
+  }
 
+  &::after {
+    top: 0;
+    left: 8px;
+    width: 22px;
+    height: 12px;
+    transform: rotate(-45deg);
+    border: none;
+    border-left: 2px solid #444444;
+    border-bottom: 2px solid #444444;
+    border-radius: 0;
+    background-color: transparent;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .selector-form__label--checkbox {
+    &::after {
+      width: 33px;
+      height: 16px;
+      top: 3px;
+      left: 11px;
+    }
+  }
+}
+
+.selector-form__list--checkbox {
   & li {
     padding-top: 10px;
     padding-bottom: 21px;
-
-    &:last-of-type {
-      padding-bottom: 0;
-    }
-  }
-
-  & label {
-    &::before {
-      border-radius: 0;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 8px;
-      display: none;
-      width: 22px;
-      height: 12px;
-      transform: rotate(-45deg);
-      border: none;
-      border-left: 2px solid #444444;
-      border-bottom: 2px solid #444444;
-      box-sizing: border-box;
-      border-radius: 0;
-      background-color: transparent;
-    }
   }
 }
 
@@ -153,15 +148,6 @@
       padding-top: 0;
       width: 239px;
       padding-bottom: 46px;
-    }
-
-    & label {
-      &::after {
-        width: 33px;
-        height: 16px;
-        top: 3px;
-        left: 11px;
-      }
     }
   }
 }

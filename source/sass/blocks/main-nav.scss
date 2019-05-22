@@ -95,14 +95,13 @@
     @include list-clear;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     order: -1;
     min-height: 88px;
     font-size: 15px;
 
     & li {
-      padding-top: 0;
-      padding-bottom: 30px;
+      padding-top: 17px;
       padding-right: 61px;
     }
 

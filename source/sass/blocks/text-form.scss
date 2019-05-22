@@ -1,3 +1,29 @@
+.text-form {
+  position: relative;
+
+  & svg {
+    position: absolute;
+    right: 4px;
+    bottom: 25px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .text-form {
+    margin-left: -50px;
+    margin-right: -50px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .text-form {
+    padding-left: 113px;
+    padding-right: 226px;
+  }
+}
+
 .text-form__list {
   padding-top: 15px;
 }
@@ -20,6 +46,10 @@
     display: flex;
     align-items: baseline;
     padding-bottom: 14px;
+
+    &:last-of-type {
+      padding-bottom: 0;
+    }
   }
 }
 
@@ -38,47 +68,19 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .text-form__list--name {
-    li {
-      &:last-of-type {
-        padding-bottom: 0;
-      }
-    }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .text-form__list--name {
-    padding-right: 175px;
-  }
-}
-
 .text-form--phone,
 .text-form--email {
-  position: relative;
   padding-top: 8px;
   padding-bottom: 17px;
 
   & legend {
     padding-bottom: 6px;
   }
-
-  & svg {
-    position: absolute;
-    right: 4px;
-    bottom: 25px;
-    opacity: 0.2;
-  }
 }
 
 @media (min-width: $tablet-width) {
   .text-form--phone,
   .text-form--email {
-    margin-left: -50px;
-    margin-right: -50px;
-    padding-left: 50px;
-    padding-right: 50px;
     padding-top: 57px;
     padding-bottom: 50px;
     background-color: #f1f1f1;
@@ -105,8 +107,6 @@
 @media (min-width: $tablet-width) {
   .text-form--phone {
     padding-bottom: 0;
-    margin-left: -50px;
-    margin-right: -50px;
 
     & svg {
       right: 77px;
@@ -127,9 +127,6 @@
     background-color: #f1f1f1;
     margin-top: 0;
     padding-top: 30px;
-    margin-left: -50px;
-    margin-right: -50px;
-    padding-left: 50px;
     padding-bottom: 50px;
 
     input {
@@ -141,22 +138,10 @@
 }
 
 @media (min-width: $desktop-width) {
-  .text-form--phone,
-  .text-form--email {
-    padding-left: 113px;
-    padding-right: 226px;
-  }
-}
-
-@media (min-width: $desktop-width) {
   .text-form--phone {
     & svg {
       right: 233px;
       bottom: 17px;
-    }
-
-    & input {
-      width: 700px;
     }
 
     & legend {
@@ -171,10 +156,6 @@
     & svg {
       right: 229px;
       bottom: 59px;
-    }
-
-    & input {
-      width: 700px;
     }
 
     & legend {

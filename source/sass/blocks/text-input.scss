@@ -13,6 +13,10 @@
   border-radius: 0;
   background-color: transparent;
 
+  & + svg {
+    opacity: 0.2;
+  }
+
   &:hover,
   &:focus {
     border-color: #62d1ba;
@@ -32,5 +36,16 @@
 @media (min-width: $tablet-width) {
   .text-input {
     padding-left: 18px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    font-size: 19px;
+    line-height: 19px;
+    width: 501px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .text-input {
+    width: 700px;
   }
 }

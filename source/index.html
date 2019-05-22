@@ -322,6 +322,49 @@
           <span class="visually-hidden">HTML Academy</span></a>
       </div>
     </footer>
+    <div class="modal">
+      <h1 class="modal__title">Добавить в корзину</h1>
+      <p class="modal__description">Выберите размер:</p>
+      <form class="modal__form"
+        method="get"
+        action="https://echo.htmlacademy.ru">
+        <fieldset class="modal__fieldset">
+          <ul class="modal__form-list">
+            <li class="modal__form-item">
+              <input class="modal__form-input"
+                type="radio"
+                name="size"
+                value="s"
+                id="size-s"
+                checked>
+              <label class="modal__form-label modal__form-label--s"
+                for="size-s">Размер s</label>
+            </li>
+            <li class="modal__form-item">
+              <input class="modal__form-input"
+                type="radio"
+                name="size"
+                value="m"
+                id="size-m">
+              <label class="modal__form-label modal__form-label--m"
+                for="size-m">Размер m</label>
+            </li>
+            <li class="modal__form-item">
+              <input class="modal__form-input"
+                type="radio"
+                name="size"
+                value="l"
+                id="size-l">
+              <label class="modal__form-label modal__form-label--l"
+                for="size-l">Размер l</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="button modal__button"
+          type="button"
+          name="button">Добавить</button>
+      </form>
+    </div>
   </div>
 </body>
 

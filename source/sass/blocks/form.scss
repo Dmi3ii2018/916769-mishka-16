@@ -1,5 +1,15 @@
 .form {
   margin-top: 18px;
+}
+
+.form__fieldset {
+  min-width: 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+  border: none;
 
   & legend {
     @include font-bold;
@@ -8,20 +18,46 @@
     color: #63d1bb;
     text-transform: uppercase;
   }
-}
-
-.form__fieldset {
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 0;
-  padding-right: 0;
-  margin: 0;
-  border: none;
 
   &::after {
     content: "";
     display: table;
     clear: both;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form__fieldset {
+    & legend {
+      padding-top: 9px;
+      width: 169px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__fieldset {
+    & legend {
+      width: 100px;
+    }
+  }
+}
+
+.form__list {
+  @include list-clear;
+  clear: both;
+}
+
+@media (min-width: $tablet-width) {
+  .form__list {
+    padding-left: 169px;
+    clear: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__list {
+    padding-left: 111px;
   }
 }
 
@@ -58,52 +94,19 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .form__fieldset {
-    &:nth-of-type(4) {
-      & input {
-        bottom: -12px;
-        right: 50px;
-      }
-    }
-
-    &:nth-of-type(n+4) {
-      & input {
-        width: 501px;
-      }
-    }
-
-    &:nth-of-type(5) {
-      & input {
-        bottom: 50px;
-        right: 50px;
-      }
-    }
-
-    & input {
-      flex-grow: 1;
-      font-size: 19px;
-      line-height: 19px;
-    }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .form__fieldset {
-    &:nth-of-type(n+4) {
-      & input {
-        width: 700px;
-      }
-    }
-  }
-}
-
 .form__button {
   margin-top: 31px;
   margin-bottom: 55px;
   width: 100%;
   font-size: 17px;
-  background-color: transparent;
+}
+
+@media (min-width: $tablet-width) {
+  .form__button {
+    width: 230px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -122,30 +125,5 @@
     padding-left: 176px;
     padding-right: 174px;
     margin-bottom: 42px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .form__button {
-    width: 230px;
-    margin-bottom: 0;
-    margin-top: 0;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .form {
-    & legend {
-      padding-top: 9px;
-      width: 169px;
-    }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .form {
-    & legend {
-      width: 100px;
-    }
   }
 }
