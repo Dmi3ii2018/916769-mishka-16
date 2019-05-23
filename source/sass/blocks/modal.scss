@@ -15,17 +15,17 @@
 }
 
 @media (min-width: $tablet-width) {
-  .modal__form {
-    padding-left: 3px;
-    padding-right: 3px;
-  }
-}
-
-@media (min-width: $tablet-width) {
   .modal {
     width: 566px;
     padding-left: 104px;
     padding-right: 104px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .modal__form {
+    padding-left: 3px;
+    padding-right: 3px;
   }
 }
 
