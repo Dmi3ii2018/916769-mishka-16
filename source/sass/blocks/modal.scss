@@ -14,6 +14,11 @@
   box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
 }
 
+.modal__form {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
 @media (min-width: $tablet-width) {
   .modal {
     width: 566px;
@@ -121,8 +126,6 @@
   font-size: 17px;
   padding-bottom: 16px;
   padding-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 31px;
   line-height: 16px;
   background-color: #63d1bb;
