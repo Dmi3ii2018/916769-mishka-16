@@ -1,0 +1,18 @@
+.form-label {
+  @include font-bold;
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 17px;
+  color: #000000;
+  line-height: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-label {
+    width: auto;
+    margin-right: 25px;
+    font-size: 19px;
+    line-height: 18px;
+  }
+}
