@@ -1,17 +1,34 @@
 .modal {
-  padding-top: 34px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  padding-top: 30px;
   padding-bottom: 46px;
   padding-left: 30px;
   padding-right: 30px;
   box-sizing: border-box;
+  background-color: #ffffff;
   border: 2px solid #c6c6c6;
   box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+}
+
+@media (min-width: $tablet-width) {
+  .modal {
+    width: 566px;
+
+    padding-left: 104px;
+    padding-right: 104px;
+  }
 }
 
 .modal__title {
   @include font-bold;
   padding-left: 53px;
   padding-right: 53px;
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 25px;
   line-height: 30px;
   text-transform: uppercase;
@@ -19,8 +36,26 @@
   color: #000000;
 }
 
+@media (min-width: $tablet-width) {
+  .modal__title {
+    font-size: 30px;
+    line-height: 57px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .modal__description {
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .modal__description {
+    margin-top: 14px;
+    margin-bottom: 21px;
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
 .modal__fieldset {
@@ -29,6 +64,8 @@
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .modal__form-item {
@@ -54,8 +91,8 @@
     display: inline-block;
     width: 82px;
     height: 52px;
-    padding-left: 31px;
     padding-top: 17px;
+    text-align: center;
     font-size: 17px;
     text-transform: uppercase;
     line-height: 16px;
@@ -94,18 +131,34 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .modal__form-label {
+    &::before {
+      width: 112px;
+    }
+  }
+}
+
 .modal__form-input:checked + .modal__form-label::before {
   border-color: #63d1bb;
 }
 
 .modal__button {
   @include font-bold;
-  width: 260px;
+  width: 256px;
   font-size: 17px;
+  padding-bottom: 16px;
+  padding-top: 20px;
   margin-top: 31px;
   line-height: 16px;
   background-color: #63d1bb;
   color: #ffffff;
   text-transform: uppercase;
   border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .modal__button {
+    width: 350px;
+  }
 }
