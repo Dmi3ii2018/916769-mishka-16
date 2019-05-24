@@ -3,6 +3,18 @@
   flex-direction: column-reverse;
   flex-grow: 0;
   margin-top: 31px;
+
+  &:hover {
+    & .goods-item__description-wrapper {
+      box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &:active {
+    & .goods-item__description-wrapper {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -60,14 +72,6 @@
     padding-left: 27px;
     padding-right: 32px;
     flex-basis: auto;
-
-    &:hover {
-      box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
-    }
-
-    &:active {
-      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
-    }
   }
 }
 
@@ -114,7 +118,7 @@
   @include font-bold;
   position: relative;
   display: block;
-  padding-top: 20px;
+  padding-top: 19px;
   padding-bottom: 28px;
   line-height: 24px;
   color: #000000;
