@@ -8,6 +8,11 @@
     content="width=device-width,initial-scale=1">
   <link rel="stylesheet"
     href="css/style.css">
+  <script>
+    document.createElement("picture");
+  </script>
+  <script src="js/picturefill.min.js"
+    async></script>
 </head>
 
 <body>
@@ -141,12 +146,10 @@
             <source media="(min-width: 1150px)"
               srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)"
-              srcset="img/triple-set-tablet@1x.jpg">
+              srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
             <img class="week-offer__image"
               src="img/triple-set-mobile@1x.jpg"
-              srcset="img/triple-set-mobile@2x.jpg"
-              width="260"
-              height="315"
+              srcset="img/triple-set-mobile@2x.jpg 2x"
               alt="Товар недели">
           </picture>
           <p class="week-offer__price">Цена: 990 руб.</p>
@@ -217,11 +220,16 @@
             style="border:0"
             allowfullscreen>
           </iframe>
-          <img class="contacts__map-picture"
-            src="img/map-mobile@1x.jpg"
-            width="320"
-            height="457"
-            alt="Карта">
+          <picture>
+            <source media="(min-width: 1140px)"
+              srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+            <img class="contacts__map-picture"
+              src="img/map-mobile@1x.jpg"
+              srcset="img/map-mobile@2x.jpg 2x"
+              alt="Карта">
+          </picture>
           <a class="contacts__map-link"
             href="https://goo.gl/maps/V2xNwvNUtDhPpspy5">
             <img src="img/icon-map-pin.svg"

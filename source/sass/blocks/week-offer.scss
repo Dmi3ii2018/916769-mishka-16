@@ -117,16 +117,16 @@
 @media (min-width: $tablet-width) {
   .week-offer__image {
     position: absolute;
-    top: 157px;
-    right: 77px;
+    top: 108px;
+    right: 50px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .week-offer__image {
     position: absolute;
-    top: 44px;
-    right: 175px;
+    top: 0;
+    right: 50px;
     padding-left: 16px;
   }
 }

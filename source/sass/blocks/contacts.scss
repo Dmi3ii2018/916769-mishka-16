@@ -253,3 +253,17 @@
   top: 145px;
   left: 138px;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts__map-link {
+    top: 142px;
+    left: 364px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__map-link {
+    top: 145px;
+    left: 240px;
+  }
+}
