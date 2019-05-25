@@ -13,7 +13,7 @@
 @media (min-width: $desktop-width) {
   .fabrication {
     position: relative;
-    margin-bottom: 105px;
+    margin-bottom: 108px;
     margin-top: 57px;
   }
 }
@@ -48,6 +48,14 @@
 .fabrication__wrapper {
   padding-bottom: 31px;
   border: 1px solid #ececec;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -64,7 +72,7 @@
     margin-left: auto;
     padding-right: 59px;
     padding-left: 80px;
-    padding-bottom: 61px;
+    padding-bottom: 58px;
   }
 }
 
@@ -119,8 +127,6 @@
     order: -1;
     width: 100%;
     height: auto;
-    padding-right: 404px;
-    padding-bottom: 275px;
     overflow: unset;
     font-size: 20px;
   }
@@ -132,7 +138,6 @@
     left: 50px;
     top: 0;
     width: auto;
-    padding-right: 421px;
   }
 }
 
@@ -158,14 +163,14 @@
 
 @media (min-width: $tablet-width) {
   .fabrication__title {
-    padding-top: 35px;
+    padding-top: 28px;
     padding-left: 105px;
     font-size: 20px;
     padding-bottom: 21px;
 
     &::before {
       left: 41px;
-      transform: translateY(-10px);
+      transform: translateY(-14px);
     }
   }
 }
