@@ -9,6 +9,7 @@
     "browser-sync": "2.26.x",
     "gulp": "4.0.x",
     "gulp-csso": "^3.0.1",
+    "gulp-imagemin": "^5.0.3",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "8.0.x",
     "gulp-rename": "^1.4.0",
@@ -39,5 +40,8 @@
   ],
   "engines": {
     "node": "8.15"
+  },
+  "dependencies": {
+    "imagemin-optipng": "^7.0.0"
   }
 }
