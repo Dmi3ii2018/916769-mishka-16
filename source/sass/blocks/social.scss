@@ -11,7 +11,9 @@
 
 .social__link {
   &:hover {
-    fill: #46c1ae;
+    & svg {
+      fill: #46c1ae;
+    }
   }
 
   &:active {
