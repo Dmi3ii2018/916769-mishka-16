@@ -10,10 +10,8 @@
 }
 
 .social__link {
-  &:hover {
-    & svg {
-      fill: #46c1ae;
-    }
+  &:hover  {
+    fill: #46c1ae;
   }
 
   &:active {

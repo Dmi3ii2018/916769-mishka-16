@@ -162,6 +162,13 @@
 
 .selector-form__input {
   display: none;
+
+  &:disabled {
+    & + label {
+      opacity: 0.3;
+    }
+
+  }
 }
 
 @media (min-width: $tablet-width) {

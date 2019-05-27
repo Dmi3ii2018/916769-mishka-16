@@ -4,6 +4,12 @@
   align-items: center;
 }
 
+.main-nav--without-js {
+  & .main-nav__toggle {
+    display: none;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .main-nav {
     justify-content: space-between;
