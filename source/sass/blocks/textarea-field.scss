@@ -25,6 +25,10 @@
     outline: none;
     border-color: #62d1ba;
   }
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
