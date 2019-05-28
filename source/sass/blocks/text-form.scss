@@ -85,7 +85,7 @@
     padding-bottom: 50px;
     background-color: #f1f1f1;
 
-    svg {
+    & svg {
       right: 73px;
       bottom: 59px;
     }
@@ -129,7 +129,7 @@
     padding-top: 30px;
     padding-bottom: 50px;
 
-    input {
+    & input {
       bottom: 50px;
       right: 50px;
       padding-left: 18px;

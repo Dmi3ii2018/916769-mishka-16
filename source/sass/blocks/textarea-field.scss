@@ -16,7 +16,7 @@
     color: rgba(0, 0, 0, 0.3);
   }
 
-  &:hover {
+  &:hover:not(:disabled) {
     border-color: #62d1ba;
   }
 
@@ -24,6 +24,10 @@
     color: #444444;
     outline: none;
     border-color: #62d1ba;
+  }
+
+  &:disabled {
+    opacity: 0.3;
   }
 }
 
