@@ -11,10 +11,6 @@
   margin: 0;
   border: none;
 
-  & input:disabled {
-    opacity: 0.3;
-  }
-
   & legend {
     @include font-bold;
     float: left;

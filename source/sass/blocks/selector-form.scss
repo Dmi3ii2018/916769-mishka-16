@@ -162,6 +162,16 @@
 
 .selector-form__input {
   display: none;
+
+  &:disabled {
+    & + label {
+      opacity: 0.3;
+
+      &::before {
+        border-color: #444444;
+      }
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
