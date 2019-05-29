@@ -32,18 +32,23 @@
 
 @media (min-width: $tablet-width) {
   .form__fieldset {
-    & legend {
-      padding-top: 9px;
-      width: 169px;
-    }
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  & legend {
+    padding-top: 9px;
+    width: 169px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .form__fieldset {
-    & legend {
-      width: 100px;
-    }
+    padding-left: 111px;
+  }
+
+  & legend {
+    width: 100px;
   }
 }
 
@@ -61,19 +66,6 @@
 
 @media (min-width: $desktop-width) {
   .form__list {
-    padding-left: 111px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .form__fieldset {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .form__fieldset {
     padding-left: 111px;
   }
 }

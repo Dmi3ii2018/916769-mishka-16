@@ -220,16 +220,3 @@
     padding-right: 3px;
   }
 }
-
-@media (min-width: $tablet-width) {
-  .main-nav__border {
-    display: block;
-    flex-grow: 1;
-    width: 100%;
-    height: 1px;
-    background-color: #ececec;
-    order: -1;
-    margin-left: -$tablet-indent;
-    margin-right: -$tablet-indent;
-  }
-}

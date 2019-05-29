@@ -6,13 +6,16 @@
   <title>HTML Academy: Мишка</title>
   <meta name="viewport"
     content="width=device-width,initial-scale=1">
+  <link rel="preload"
+    href="fonts/opensans.woff2"
+    as="font"
+    crossorigin="anonymous">
+  <link rel="preload"
+    href="fonts/opensansbold.woff2"
+    as="font"
+    crossorigin="anonymous">
   <link rel="stylesheet"
     href="css/style.min.css">
-  <script>
-    document.createElement("picture");
-  </script>
-  <script src="js/main.min.js"
-    async></script>
 </head>
 
 <body>
@@ -75,7 +78,6 @@
             </a>
           </li>
         </ul>
-        <span class="main-nav__border"></span>
         <p class="main-nav__delivery">Бесплатная доставка по России</p>
         <ul class="main-nav__promotion site-list">
           <li class="site-list__item">
@@ -92,7 +94,7 @@
   </div>
   <main class="page-main">
     <section class="promo-block">
-      <div class="main-wrapper center-wrapper">
+      <div class="main-wrapper">
         <div class="promo-block__image-wrapper">
           <h1 class="title promo-block__title">Милые штуки ручной работы&nbsp;для дома</h1>
         </div>
@@ -350,7 +352,8 @@
       </form>
     </div>
   </div>
-
+  <script src="js/main.min.js"
+    async></script>
 </body>
 
 </html>

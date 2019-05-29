@@ -11,7 +11,6 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
 var uglify = require('gulp-uglify');
-var pipeline = require('readable-stream').pipeline;
 var concat = require('gulp-concat');
 
 var sass = require("gulp-sass");
@@ -72,7 +71,6 @@ gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/**",
     "source/*.ico"
   ], {
       base: "source"

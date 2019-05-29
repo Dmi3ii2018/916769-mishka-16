@@ -15,10 +15,12 @@ for (var i = 0; i < cartLinks.length; i++) {
   cartLinks[i].addEventListener("click", onModalOpen);
 }
 
-modalContainer.addEventListener("click", function (evt) {
-  if (!evt.target.classList.contains("modal-container")) {
-    return;
-  }
-  evt.preventDefault();
-  modalContainer.classList.add("modal-container--closed");
-});
+if (modalContainer) {
+  modalContainer.addEventListener("click", function (evt) {
+    if (!evt.target.classList.contains("modal-container")) {
+      return;
+    }
+    evt.preventDefault();
+    modalContainer.classList.add("modal-container--closed");
+  });
+}
