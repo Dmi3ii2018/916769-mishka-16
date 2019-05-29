@@ -90,9 +90,11 @@
         </ul>
       </nav>
     </header>
-    <main class="page-main">
-      <section class="goods">
-        <h1 class="title goods__title">Каталог товаров</h1>
+  </div>
+  <main class="page-main">
+    <section class="goods">
+      <h1 class="title goods__title">Каталог товаров</h1>
+      <div class="main-wrapper">
         <ul class="goods-list center-wrapper">
           <li class="goods-list__item goods-item">
             <div class="goods-item__description-wrapper">
@@ -202,45 +204,52 @@
             </a>
           </li>
         </ul>
-      </section>
-      <section class="fabrication center-wrapper">
-        <div class="fabrication__wrapper">
-          <h2 class="title title--s fabrication__title">Процесс производства</h2>
-          <div class="fabrication__video-wrapper">
-            <img class="fabrication__play"
-              src="img/icon-play.svg"
-              width="101"
-              height="77"
-              alt="Воспроизвести">
-            <picture>
-              <source type="image/webp"
-                media="(min-width: 1140px)"
-                srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
-              <source media="(min-width: 1140px)"
-                srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
-              <source type="image/webp"
-                media="(min-width: 768px)"
-                srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
-              <source media="(min-width: 768px)"
-                srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
-              <source type="image/webp"
-                srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
-              <img class="fabrication__video"
-                src="img/video-mobile@1x.jpg"
-                srcset="img/video-mobile@2x.jpg 2x"
-                alt="Видео">
-            </picture>
+      </div>
+    </section>
+    <section class="fabrication">
+      <div class="main-wrapper center-wrapper fabrication__content">
+        <div class="fabrication__container">
+          <div class="fabrication__wrapper">
+            <h2 class="title title--s fabrication__title">Процесс производства</h2>
+            <div class="fabrication__video-wrapper">
+              <img class="fabrication__play"
+                src="img/icon-play.svg"
+                width="101"
+                height="77"
+                alt="Воспроизвести">
+              <picture>
+                <source type="image/webp"
+                  media="(min-width: 1140px)"
+                  srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+                <source media="(min-width: 1140px)"
+                  srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+                <source type="image/webp"
+                  media="(min-width: 768px)"
+                  srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+                <source type="image/webp"
+                  srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
+                <img class="fabrication__video"
+                  src="img/video-mobile@1x.jpg"
+                  srcset="img/video-mobile@2x.jpg 2x"
+                  alt="Видео">
+              </picture>
+            </div>
+            <p class="fabrication__description">
+              По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
+              появляются наши товары.
+            </p>
+            <a class="button fabrication__button"
+              href="modal.html">Сделать заказ</a>
           </div>
-          <p class="fabrication__description">
-            По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
-            появляются наши товары.
-          </p>
-          <a class="button fabrication__button"
-            href="modal.html">Сделать заказ</a>
         </div>
-      </section>
-    </main>
-    <footer class="page-footer center-wrapper">
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="main-wrapper center-wrapper page-footer__content">
       <ul class="social page-footer__social">
         <li class="social__item">
           <a class="social__link"
@@ -283,53 +292,56 @@
           </svg>
           <span class="visually-hidden">HTML Academy</span></a>
       </div>
-    </footer>
-    <div class="modal-container modal-container--closed">
-      <div class="modal">
-        <h2 class="modal__title">Добавить в корзину</h2>
-        <p class="modal__description">Выберите размер:</p>
-        <form class="modal__form"
-          method="get"
-          action="https://echo.htmlacademy.ru">
-          <fieldset class="modal__fieldset">
-            <ul class="modal__form-list">
-              <li class="modal__form-item">
-                <input class="modal__form-input"
-                  type="radio"
-                  name="size"
-                  value="s"
-                  id="size-s"
-                  checked>
-                <label class="modal__form-label modal__form-label--s"
-                  for="size-s">s</label>
-              </li>
-              <li class="modal__form-item">
-                <input class="modal__form-input"
-                  type="radio"
-                  name="size"
-                  value="m"
-                  id="size-m">
-                <label class="modal__form-label modal__form-label--m"
-                  for="size-m">m</label>
-              </li>
-              <li class="modal__form-item">
-                <input class="modal__form-input"
-                  type="radio"
-                  name="size"
-                  value="l"
-                  id="size-l">
-                <label class="modal__form-label modal__form-label--l"
-                  for="size-l">l</label>
-              </li>
-            </ul>
-          </fieldset>
-          <button class="button modal__button"
-            type="submit"
-            name="button">Добавить</button>
-        </form>
-      </div>
+    </div>
+
+  </footer>
+  <div class="modal-container modal-container--closed">
+    <div class="modal">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <p class="modal__description">Выберите размер:</p>
+      <form class="modal__form"
+        method="get"
+        action="https://echo.htmlacademy.ru">
+        <fieldset class="modal__fieldset">
+          <ul class="modal__form-list">
+            <li class="modal__form-item">
+              <input class="modal__form-input"
+                type="radio"
+                name="size"
+                value="s"
+                id="size-s"
+                checked>
+              <label class="modal__form-label modal__form-label--s"
+                for="size-s">s</label>
+            </li>
+            <li class="modal__form-item">
+              <input class="modal__form-input"
+                type="radio"
+                name="size"
+                value="m"
+                id="size-m">
+              <label class="modal__form-label modal__form-label--m"
+                for="size-m">m</label>
+            </li>
+            <li class="modal__form-item">
+              <input class="modal__form-input"
+                type="radio"
+                name="size"
+                value="l"
+                id="size-l">
+              <label class="modal__form-label modal__form-label--l"
+                for="size-l">l</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="button modal__button"
+          type="submit"
+          name="button">Добавить</button>
+      </form>
     </div>
   </div>
+
+  <script src="js/modal.js"></script>
 </body>
 
 </html>

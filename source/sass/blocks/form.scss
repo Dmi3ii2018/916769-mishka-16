@@ -2,13 +2,17 @@
   margin-top: 18px;
 }
 
+@media (min-width: $tablet-width) {
+  .form__center-wrapper {
+    background-color: #f1f1f1;
+  }
+}
+
 .form__fieldset {
   min-width: 0;
   padding-top: 16px;
   padding-bottom: 16px;
-  padding-left: 0;
-  padding-right: 0;
-  margin: 0;
+  box-sizing: border-box;
   border: none;
 
   & legend {
@@ -70,12 +74,12 @@
 
 @media (min-width: $desktop-width) {
   .form__fieldset {
-    padding-left: 65px;
+    padding-left: 111px;
   }
 }
 
 .form__explanation {
-  margin-top: 7px;
+  margin-top: 10px;
   font-size: 14px;
   line-height: 16px;
 }
@@ -106,7 +110,12 @@
     width: 230px;
     margin-bottom: 0;
     margin-top: 0;
+    box-sizing: border-box;
   }
+}
+
+.form__submit {
+  box-sizing: border-box;
 }
 
 @media (min-width: $tablet-width) {
@@ -122,8 +131,8 @@
 
 @media (min-width: $desktop-width) {
   .form__submit {
-    padding-left: 176px;
-    padding-right: 174px;
+    padding-left: 225px;
+    padding-right: 224px;
     margin-bottom: 42px;
   }
 }

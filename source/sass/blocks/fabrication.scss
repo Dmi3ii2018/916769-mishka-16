@@ -12,9 +12,18 @@
 
 @media (min-width: $desktop-width) {
   .fabrication {
-    position: relative;
     margin-bottom: 108px;
     margin-top: 57px;
+  }
+}
+
+.fabrication__content {
+  box-sizing: border-box;
+}
+
+@media (min-width: $desktop-width) {
+  .fabrication__content {
+    position: relative;
   }
 }
 
@@ -48,7 +57,9 @@
 .fabrication__wrapper {
   padding-bottom: 31px;
   border: 1px solid #ececec;
+}
 
+.fabrication__container {
   &:hover {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
   }

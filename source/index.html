@@ -89,26 +89,30 @@
         </ul>
       </nav>
     </header>
-    <main class="page-main">
-      <section class="promo-block">
+  </div>
+  <main class="page-main">
+    <section class="promo-block">
+      <div class="main-wrapper center-wrapper">
         <div class="promo-block__image-wrapper">
           <h1 class="title promo-block__title">Милые штуки ручной работы&nbsp;для дома</h1>
         </div>
         <ul class="goods-type center-wrapper">
           <li class="goods-type__item goods-type__item--interior">
             <a class="goods-type__link"
-              href="#">
+              href="catalog.html">
               <span class="goods-type__name">Предметы интерьера</span>
             </a>
           </li>
           <li class="goods-type__item goods-type__item--toys">
             <a class="goods-type__link"
-              href="#">
+              href="catalog.html">
               <span class="goods-type__name">Детские игрушки</span>
             </a>
           </li>
         </ul>
-      </section>
+      </div>
+    </section>
+    <div class="main-wrapper">
       <section class="week-offer center-wrapper">
         <h2 class="title title--m week-offer__name">Вязаные корзинки</h2>
         <h3 class="title title--s week-offer__title">Товар недели</h3>
@@ -149,7 +153,7 @@
           </picture>
           <p class="week-offer__price">Цена: 990 руб.</p>
           <a class="button week-offer__button"
-            href="modal.html">Заказать</a>
+            href="#">Заказать</a>
         </div>
       </section>
       <section class="features center-wrapper">
@@ -188,7 +192,7 @@
             type="button">Следующий отзыв</button>
         </div>
         <a class="button feedback__button-write"
-          href="#">Написать</a>
+          href="feedback.html">Написать</a>
       </section>
       <section class="contacts">
         <div class="contacts__wrapper center-wrapper">
@@ -250,11 +254,13 @@
           <a class="
                 button
                 contacts__button"
-            href="#">Напишите нам</a>
+            href="connection.html">Напишите нам</a>
         </div>
       </section>
-    </main>
-    <footer class="page-footer center-wrapper">
+  </main>
+  </div>
+  <footer class="page-footer">
+    <div class="main-wrapper center-wrapper page-footer__content">
       <ul class="social page-footer__social">
         <li class="social__item">
           <a class="social__link"
@@ -297,53 +303,54 @@
           </svg>
           <span class="visually-hidden">HTML Academy</span></a>
       </div>
-    </footer>
-    <div class="modal-container modal-container--closed">
-      <div class="modal">
-        <h2 class="modal__title">Добавить в корзину</h2>
-        <p class="modal__description">Выберите размер:</p>
-        <form class="modal__form"
-          method="get"
-          action="https://echo.htmlacademy.ru">
-          <fieldset class="modal__fieldset">
-            <ul class="modal__form-list">
-              <li class="modal__form-item">
-                <input class="modal__form-input"
-                  type="radio"
-                  name="size"
-                  value="s"
-                  id="size-s"
-                  checked>
-                <label class="modal__form-label modal__form-label--s"
-                  for="size-s">s</label>
-              </li>
-              <li class="modal__form-item">
-                <input class="modal__form-input"
-                  type="radio"
-                  name="size"
-                  value="m"
-                  id="size-m">
-                <label class="modal__form-label modal__form-label--m"
-                  for="size-m">m</label>
-              </li>
-              <li class="modal__form-item">
-                <input class="modal__form-input"
-                  type="radio"
-                  name="size"
-                  value="l"
-                  id="size-l">
-                <label class="modal__form-label modal__form-label--l"
-                  for="size-l">l</label>
-              </li>
-            </ul>
-          </fieldset>
-          <button class="button modal__button"
-            type="submit"
-            name="button">Добавить</button>
-        </form>
-      </div>
+    </div>
+  </footer>
+  <div class="modal-container modal-container--closed">
+    <div class="modal">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <p class="modal__description">Выберите размер:</p>
+      <form class="modal__form"
+        method="get"
+        action="https://echo.htmlacademy.ru">
+        <fieldset class="modal__fieldset">
+          <ul class="modal__form-list">
+            <li class="modal__form-item">
+              <input class="modal__form-input"
+                type="radio"
+                name="size"
+                value="s"
+                id="size-s"
+                checked>
+              <label class="modal__form-label modal__form-label--s"
+                for="size-s">s</label>
+            </li>
+            <li class="modal__form-item">
+              <input class="modal__form-input"
+                type="radio"
+                name="size"
+                value="m"
+                id="size-m">
+              <label class="modal__form-label modal__form-label--m"
+                for="size-m">m</label>
+            </li>
+            <li class="modal__form-item">
+              <input class="modal__form-input"
+                type="radio"
+                name="size"
+                value="l"
+                id="size-l">
+              <label class="modal__form-label modal__form-label--l"
+                for="size-l">l</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="button modal__button"
+          type="submit"
+          name="button">Добавить</button>
+      </form>
     </div>
   </div>
+  <script src="js/modal.js"></script>
 </body>
 
 </html>

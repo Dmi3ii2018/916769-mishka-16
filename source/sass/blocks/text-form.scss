@@ -3,17 +3,15 @@
 
   & svg {
     position: absolute;
-    right: 4px;
+    right: 34px;
     bottom: 25px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .text-form {
-    margin-left: -50px;
-    margin-right: -50px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 49px;
+    padding-right: 49px;
   }
 }
 
@@ -83,6 +81,7 @@
   .text-form--email {
     padding-top: 57px;
     padding-bottom: 50px;
+    padding-right: 49px;
     background-color: #f1f1f1;
 
     & svg {
@@ -99,7 +98,7 @@
 
 .text-form--phone {
   & svg {
-    right: 8px;
+    right: 39px;
     bottom: 34px;
   }
 }
@@ -123,7 +122,6 @@
 
 @media (min-width: $tablet-width) {
   .text-form--email {
-    padding-right: 50px;
     background-color: #f1f1f1;
     margin-top: 0;
     padding-top: 30px;

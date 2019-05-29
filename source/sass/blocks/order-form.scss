@@ -30,7 +30,8 @@
       height: 24px;
       background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: repeat-x;
-      background-size: 100%;
+      background-size: 768px 23px;
+      background-position: center;
     }
   }
 }
@@ -42,15 +43,22 @@
     padding-bottom: 104px;
 
     &::after {
-      bottom: -9px;
+      bottom: -17px;
+      background-size: 1150px 34px;
+      height: 34px;
     }
   }
+}
+
+.order-form__content {
+  box-sizing: border-box;
 }
 
 .order-form__description {
   margin-top: 23px;
   font-size: 13px;
   line-height: 24px;
+  box-sizing: border-box;
 }
 
 @media (min-width: $tablet-width) {
@@ -64,7 +72,7 @@
 @media (min-width: $desktop-width) {
   .order-form__description {
     margin-top: 122px;
-    padding-left: 176px;
-    padding-right: 150px;
+    padding-left: 225px;
+    padding-right: 200px;
   }
 }
