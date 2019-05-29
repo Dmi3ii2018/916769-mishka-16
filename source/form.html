@@ -16,6 +16,9 @@
     href="css/style.min.css">
   <meta name="viewport"
     content="width=device-width,initial-scale=1">
+  <script>
+    document.createElement("picture");
+  </script>
 </head>
 
 <body>
@@ -95,8 +98,9 @@
   </div>
   <main class="page-main">
     <section class="order-form">
-      <h1 class="order-form__title title">Вязание на заказ</h1>
-
+      <div class="order-form__header">
+        <h1 class="order-form__title title main-wrapper">Вязание на заказ</h1>
+      </div>
       <p class="order-form__description main-wrapper center-wrapper">
         Мы будем рады воплотить в жизнь ваши пожелания!
         Заполните простую форму заказа и мы свяжемся с вами,
@@ -268,52 +272,58 @@
     </section>
   </main>
   <footer class="page-footer">
-    <div class="main-wrapper center-wrapper page-footer__content">
-      <ul class="social page-footer__social">
-        <li class="social__item">
-          <a class="social__link"
-            href="#"
-            target="_blank">
-            <svg width="21.769px"
-              height="21.334px">
-              <use xlink:href="#icon-spr-insta"></use>
-            </svg>
-            <span class="visually-hidden">Мы в Инстаграме</span></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link"
-            href="#"
-            target="_blank">
-            <svg width="14.962px"
-              height="27.718px">
-              <use xlink:href="#icon-spr-fb"></use>
-            </svg>
-            <span class="visually-hidden">Мы в Фэйсбуке</span></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link"
-            href="#"
-            target="_blank">
-            <svg width="23.494px"
-              height="20.168px">
-              <use xlink:href="#icon-spr-twitter"></use>
-            </svg>
-            <span class="visually-hidden">Мы в Твиттере</span></a>
-        </li>
-      </ul>
-      <div class="page-footer__copyright">
-        <b class="page-footer__copyright-text">Разработано</b>
-        <a class="page-footer__copyright-link"
-          href="https://htmlacademy.ru/intensive/adaptive">
-          <svg width="26.943px"
-            height="34.09px">
-            <use xlink:href="#icon-spr-htmlacademy"></use>
+      <div class="main-wrapper center-wrapper page-footer__content">
+        <a class="page-footer__logo-link"
+          href="/">
+          <svg width="101.615"
+            height="34.056">
+            <use xlink:href="#icon-spr-footer"></use>
           </svg>
-          <span class="visually-hidden">HTML Academy</span></a>
+        </a>
+        <ul class="social page-footer__social">
+          <li class="social__item">
+            <a class="social__link"
+              href="#"
+              target="_blank">
+              <svg width="21.769px"
+                height="21.334px">
+                <use xlink:href="#icon-spr-insta"></use>
+              </svg>
+              <span class="visually-hidden">Мы в Инстаграме</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link"
+              href="#"
+              target="_blank">
+              <svg width="14.962px"
+                height="27.718px">
+                <use xlink:href="#icon-spr-fb"></use>
+              </svg>
+              <span class="visually-hidden">Мы в Фэйсбуке</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link"
+              href="#"
+              target="_blank">
+              <svg width="23.494px"
+                height="20.168px">
+                <use xlink:href="#icon-spr-twitter"></use>
+              </svg>
+              <span class="visually-hidden">Мы в Твиттере</span></a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright">
+          <b class="page-footer__copyright-text">Разработано</b>
+          <a class="page-footer__copyright-link"
+            href="https://htmlacademy.ru/intensive/adaptive">
+            <svg width="26.943px"
+              height="34.09px">
+              <use xlink:href="#icon-spr-htmlacademy"></use>
+            </svg>
+            <span class="visually-hidden">HTML Academy</span></a>
+        </div>
       </div>
-    </div>
-
-  </footer>
+    </footer>
   <script src="js/main.min.js"
     async></script>
 </body>
