@@ -5,7 +5,7 @@
 
 @media (min-width: $tablet-width) {
   .fabrication {
-    margin-top: 53px;
+    margin-top: 51px;
     margin-bottom: 64px;
   }
 }
@@ -91,14 +91,14 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -43px);
 
   &:hover {
-    transform: translate(-50%, -50%) scale(1.2);
+    transform: translate(-50%, -43px) scale(1.2);
   }
 
   &:active {
-    transform: translate(-50%, -50%) scale(0.8);
+    transform: translate(-50%, -43px) scale(0.8);
     opacity: 0.3;
   }
 }
